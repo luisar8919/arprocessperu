@@ -1,0 +1,9 @@
+{
+  "routes": [
+    {
+      "route": "https://www.arprocessperu.com/*",
+      "redirect": "https://arprocessperu.com",
+      "statusCode": 301
+    }
+  ]
+}
