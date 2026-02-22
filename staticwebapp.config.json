@@ -1,9 +1,8 @@
 {
-  "routes": [
-    {
-      "route": "https://www.arprocessperu.com/*",
-      "redirect": "https://arprocessperu.com",
-      "statusCode": 301
-    }
-  ]
+  "globalHeaders": {
+    "X-Frame-Options": "DENY",
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Cache-Control": "public, max-age=604800"
+  }
 }
