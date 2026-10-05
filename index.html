@@ -1,515 +1,920 @@
-Para integrar estos nuevos servicios y secciones de manera profesional en tu landing page, he modificado el código HTML y CSS.
-
-Se han incorporado los siguientes cambios clave:
-
-1. **Enlaces en el menú de navegación** (`#consultoria-ia` y `#webs`).
-2. **Nueva sección de "Consultoría en IA y Automatización"** detallando el valor de Power Automate, N8N y la Inteligencia Artificial aplicada.
-3. **Nueva sección de "Soluciones Web"**, que destaca el servicio de desarrollo web profesional enlazado directamente a **Frondix** (`[https://www.frondix.com/](https://www.frondix.com/)`), manteniendo la misma estructura estética y minimalista que ya usabas para las apps móviles.
-
-Aquí tienes el código completo y actualizado:
-
-```html
 <!DOCTYPE html>
+
 <html lang="es-PE">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AR Process | Optimización de Procesos, TI e IA</title>
 
-<meta name="description" content="AR Process ayuda a PYMES y empresas medianas a reducir costos y aumentar productividad mediante optimización de procesos, automatización con Power Automate y N8N, IA aplicada y desarrollo web/móvil. Consultoría senior en Perú.">
+
+<title>AR Process | Optimización de Procesos y TI</title>
+
+
+
+<meta name="description" content="AR Process ayuda a PYMES y empresas medianas a reducir costos y aumentar productividad mediante optimización de procesos, automatización e IA aplicada. Consultoría senior en Perú.">
+
+
 
 <style>
+
 body{
-    margin:0;
-    font-family:'Segoe UI',Tahoma,sans-serif;
-    background:#f8fafc;
-    color:#1f2937;
+
+margin:0;
+
+font-family:'Segoe UI',Tahoma,sans-serif;
+
+background:#f8fafc;
+
+color:#1f2937;
+
 }
+
 section{
-    max-width:1200px;
-    margin:auto;
-    padding:90px 20px;
+
+max-width:1200px;
+
+margin:auto;
+
+padding:90px 20px;
+
 }
+
 h1,h2,h3{letter-spacing:-0.5px}
 
+
+
 /* NAV */
+
 nav{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    background:white;
-    box-shadow:0 6px 20px rgba(0,0,0,.08);
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
+background:white;
+
+box-shadow:0 6px 20px rgba(0,0,0,.08);
+
 }
+
 .nav-container{
-    max-width:1200px;
-    margin:auto;
-    padding:16px 20px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+
+max-width:1200px;
+
+margin:auto;
+
+padding:16px 20px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
 }
+
 .nav-logo img{height:48px;}
-.nav-links{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-}
+
 .nav-links a{
-    margin-left:18px;
-    text-decoration:none;
-    font-weight:600;
-    color:#374151;
-    font-size: 0.95rem;
+
+margin-left:22px;
+
+text-decoration:none;
+
+font-weight:600;
+
+color:#374151;
+
 }
+
 .nav-links a:hover{color:#1e40af}
 
+
+
 /* HERO */
+
 header{
-    background:linear-gradient(135deg,#0f172a,#1e40af);
-    color:white;
-    padding:130px 20px;
+
+background:linear-gradient(135deg,#0f172a,#1e40af);
+
+color:white;
+
+padding:130px 20px;
+
 }
+
 .hero{
-    max-width:1200px;
-    margin:auto;
-    display:grid;
-    grid-template-columns:1.2fr .8fr;
-    gap:50px;
-    align-items:center;
+
+max-width:1200px;
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:1.2fr .8fr;
+
+gap:50px;
+
+align-items:center;
+
 }
+
 .hero h1{font-size:3rem}
+
 .hero p{font-size:1.2rem;line-height:1.8}
+
 .hero img{
-    width:100%;
-    max-width:420px;
-    border-radius:22px;
-    box-shadow:0 25px 40px rgba(0,0,0,.25);
+
+width:100%;
+
+max-width:420px;
+
+border-radius:22px;
+
+box-shadow:0 25px 40px rgba(0,0,0,.25);
+
 }
+
 .cta a{
-    display:inline-block;
-    background:#22c55e;
-    color:#022c22;
-    padding:20px 40px;
-    border-radius:16px;
-    font-weight:800;
-    text-decoration:none;
-    margin-top:30px;
+
+display:inline-block;
+
+background:#22c55e;
+
+color:#022c22;
+
+padding:20px 40px;
+
+border-radius:16px;
+
+font-weight:800;
+
+text-decoration:none;
+
+margin-top:30px;
+
 }
+
 .social-proof{
-    margin-top:18px;
-    font-size:.95rem;
-    opacity:.9;
+
+margin-top:18px;
+
+font-size:.95rem;
+
+opacity:.9;
+
 }
+
+
 
 /* TITLES */
+
 h2{
-    text-align:center;
-    margin-bottom:60px;
-    font-size:2.3rem;
-    color:#1e40af;
+
+text-align:center;
+
+margin-bottom:60px;
+
+font-size:2.3rem;
+
+color:#1e40af;
+
 }
+
+
 
 /* ABOUT */
+
 .about{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:45px;
-    align-items:center;
-}
-.profile-image{
-    display:flex;
-    justify-content:center;
-}
-.profile-image img{
-    max-width:380px;
-    width:100%;
-    border-radius:22px;
-    background:white;
-    padding:6px;
-    box-shadow:0 20px 35px rgba(0,0,0,.15);
-}
-blockquote{
-    margin:20px 0;
-    padding-left:18px;
-    border-left:4px solid #1e40af;
-    font-style:italic;
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:45px;
+
+align-items:center;
+
 }
 
+.profile-image{
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.profile-image img{
+
+max-width:380px;
+
+width:100%;
+
+border-radius:22px;
+
+background:white;
+
+padding:6px;
+
+box-shadow:0 20px 35px rgba(0,0,0,.15);
+
+}
+
+blockquote{
+
+margin:20px 0;
+
+padding-left:18px;
+
+border-left:4px solid #1e40af;
+
+font-style:italic;
+
+}
+
+
+
 /* GRID */
+
 .grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
 }
+
 .card{
-    background:white;
-    padding:36px;
-    border-radius:22px;
-    box-shadow:0 15px 30px rgba(0,0,0,.08);
+
+background:white;
+
+padding:36px;
+
+border-radius:22px;
+
+box-shadow:0 15px 30px rgba(0,0,0,.08);
+
 }
+
 .card h3{color:#1e40af}
+
 .card ul{padding-left:18px;line-height:1.7;}
+
+
 
 .alt{background:#f1f5f9}
 
+
+
 /* FAQ */
+
 details{
-    background:white;
-    padding:28px;
-    border-radius:20px;
-    margin-bottom:20px;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+background:white;
+
+padding:28px;
+
+border-radius:20px;
+
+margin-bottom:20px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
 }
+
 summary{
-    font-weight:700;
-    cursor:pointer;
+
+font-weight:700;
+
+cursor:pointer;
+
 }
+
+
 
 /* CONTACT */
+
 .contact{
-    background:#0f172a;
-    color:white;
-    padding:90px 30px;
-    border-radius:28px;
-    text-align:center;
+
+background:#0f172a;
+
+color:white;
+
+padding:90px 30px;
+
+border-radius:28px;
+
+text-align:center;
+
 }
+
 .contact a{
-    display:inline-block;
-    margin:18px;
-    padding:18px 40px;
-    border-radius:16px;
-    font-weight:800;
-    text-decoration:none;
+
+display:inline-block;
+
+margin:18px;
+
+padding:18px 40px;
+
+border-radius:16px;
+
+font-weight:800;
+
+text-decoration:none;
+
 }
+
 .whatsapp{background:#22c55e;color:#022c22}
+
 .email{background:#1e40af;color:white}
 
+
+
 form{
-    max-width:420px;
-    margin:30px auto 0;
+
+max-width:420px;
+
+margin:30px auto 0;
+
 }
+
 input,textarea{
-    width:100%;
-    padding:14px;
-    margin-bottom:14px;
-    border-radius:10px;
-    border:none;
+
+width:100%;
+
+padding:14px;
+
+margin-bottom:14px;
+
+border-radius:10px;
+
+border:none;
+
 }
+
+
 
 footer{
-    text-align:center;
-    padding:30px;
-    color:#6b7280;
+
+text-align:center;
+
+padding:30px;
+
+color:#6b7280;
+
 }
 
-@media(max-width:992px){
-    .hero,.about{grid-template-columns:1fr;text-align:center}
-    .nav-links{display:none}
+
+
+@media(max-width:900px){
+
+.hero,.about{grid-template-columns:1fr;text-align:center}
+
+.nav-links{display:none}
+
 }
+
 </style>
+
 </head>
+
+
 
 <body>
 
+
+
 <nav>
+
 <div class="nav-container">
+
 <div class="nav-logo">
-    <img src="https://i.ibb.co/mrPbpfQg/logo-final.png" alt="AR Process">
+
+<img src="https://i.ibb.co/mrPbpfQg/logo-final.png" alt="AR Process">
+
 </div>
+
 <div class="nav-links">
+
 <a href="#problema">Problema</a>
+
 <a href="#conocenos">Conócenos</a>
+
 <a href="#solucion">Solución</a>
-<a href="#consultoria-ia">IA y Automatización</a>
+
 <a href="#industrias">Industrias</a>
-<a href="#webs">Desarrollo Web</a>
+
 <a href="#apps">Apps Móviles</a>
+
 <a href="#resultados">Resultados</a>
+
 <a href="#contacto">Contacto</a>
+
 </div>
+
 </div>
+
 </nav>
 
+
+
 <!-- 1. HEADLINE -->
+
 <header>
+
 <div class="hero">
+
 <div>
+
 <h1>
+
 ¿Cuánto dinero está perdiendo tu empresa <br>
+
 por procesos ineficientes?
+
 </h1>
+
 <p>
+
 La mayoría de empresas no tiene un problema de ventas…
+
 tiene un problema de <strong>operación, control y productividad</strong>.
+
 </p>
+
 <div class="cta">
+
 <a href="#problema">Descúbrelo ahora</a>
+
 </div>
+
 <div class="social-proof">
+
 Más de 15 años optimizando procesos y TI en empresas del Perú
+
 </div>
+
 </div>
+
+
 
 <img src="https://images.unsplash.com/photo-1556155092-8707de31f9c4" alt="Optimización de TI y procesos">
+
 </div>
+
 </header>
 
+
+
 <!-- 2. LEAD -->
+
 <section id="problema">
+
 <h2>El problema silencioso de muchas empresas</h2>
+
 <div class="grid">
+
 <div class="card">
+
 <h3>❌ Costos ocultos</h3>
+
 <p>Procesos manuales, reprocesos y errores que erosionan márgenes.</p>
+
 </div>
+
 <div class="card">
+
 <h3>❌ Falta de control</h3>
+
 <p>Decisiones basadas en intuición en lugar de datos confiables.</p>
+
 </div>
+
 <div class="card">
+
 <h3>❌ Baja productividad</h3>
+
 <p>Equipos ocupados en tareas operativas en vez de tareas estratégicas.</p>
+
 </div>
+
 </div>
+
 </section>
+
+
 
 <!-- 3. STORY + AUTORIDAD -->
+
 <section id="conocenos" class="alt">
+
 <h2>Conócenos</h2>
+
 <div class="about">
+
 <div class="profile-image">
+
 <img src="https://i.ibb.co/1fVqdZwp/Chat-GPT-Image-10-ene-2026-19-16-47.png" alt="Luis Alonso Álvarez Rivera">
+
 </div>
+
 <div>
+
 <p>
+
 <strong>AR Process</strong> es una consultoría especializada en optimización de procesos y TI,
+
 liderada por <strong>Luis Alonso Álvarez Rivera</strong>,
+
 Ingeniero de Sistemas con más de <strong>15 años de experiencia</strong>.
+
 </p>
+
 <p>
+
 Experiencia ayudando a PYMES, empresas medianas y entidades públicas a reducir costos,
+
 mejorar eficiencia y recuperar control operativo.
+
 </p>
+
 <blockquote>
+
 “No se trata de implementar tecnología, sino de generar valor económico real y medible.”
+
 </blockquote>
+
 <p>
+
 <a href="https://www.linkedin.com/in/luis-alonso-alvarez-rivera-b9b53193/" target="_blank">
+
 Ver perfil en LinkedIn
+
 </a>
+
 </p>
+
 </div>
+
 </div>
+
 </section>
+
+
 
 <!-- 4. PITCH -->
+
 <section id="solucion">
+
 <h2>Cómo lo resolvemos</h2>
+
 <div class="grid">
+
 <div class="card">
+
 <h3>⚙ Optimización de Procesos</h3>
+
 <p>Eliminamos cuellos de botella, reprocesos y pérdidas operativas.</p>
+
 </div>
+
 <div class="card">
+
 <h3>🤖 Automatización</h3>
+
 <p>Reducimos tareas manuales, errores y tiempos muertos.</p>
+
 </div>
+
 <div class="card">
+
 <h3>🧠 IA Aplicada</h3>
+
 <p>Convertimos datos en decisiones estratégicas.</p>
+
 </div>
+
 </div>
+
 </section>
 
-<!-- NUEVA SECCIÓN: CONSULTORÍA EN IA Y AUTOMATIZACIÓN (POWER AUTOMATE & N8N) -->
-<section id="consultoria-ia" class="alt">
-<h2>Consultoría en IA y Automatización Avanzada</h2>
-<div class="grid">
-<div class="card">
-<h3>⚡ Power Automate</h3>
-<p>Conectamos todo tu ecosistema de Microsoft 365, SharePoint, Teams y bases de datos corporativas para automatizar flujos de trabajo administrativos y aprobaciones sin fricciones.</p>
-</div>
-<div class="card">
-<h3>🔄 N8N Workflows</h3>
-<p>Construimos integraciones flexibles y de alto rendimiento conectando APIs, CRMs, pasarelas de pago y sistemas externos de forma ágil y eficiente.</p>
-</div>
-<div class="card">
-<h3>💡 Inteligencia Artificial Aplicada</h3>
-<p>Implementamos agentes conversacionales, procesamiento inteligente de documentos y modelos de IA orientados a potenciar la toma de decisiones y acelerar operaciones.</p>
-</div>
-</div>
-</section>
 
-<!-- INDUSTRIAS -->
-<section id="industrias">
+
+<!-- INDUSTRIAS (reubicado estratégicamente) -->
+
+<section id="industrias" class="alt">
+
 <h2>Industrias que Optimizamos</h2>
+
 <div class="grid">
 
+
+
 <div class="card">
+
 <h3>🎓 Educación</h3>
+
 <ul>
+
 <li>Automatización de admisiones, matrículas y pagos.</li>
+
 <li>Optimización de horarios y reportes académicos.</li>
+
 </ul>
+
 </div>
 
+
+
 <div class="card">
+
 <h3>🏥 Salud</h3>
+
 <ul>
+
 <li>Admisión y facturación más rápidas.</li>
+
 <li>Menos errores administrativos.</li>
+
 </ul>
+
 </div>
 
+
+
 <div class="card">
+
 <h3>💼 Servicios</h3>
+
 <ul>
+
 <li>Facturación y reportes automáticos.</li>
+
 <li>Control de rentabilidad.</li>
+
 </ul>
+
 </div>
 
+
+
 <div class="card">
+
 <h3>🏭 Comercio / Manufactura</h3>
+
 <ul>
+
 <li>Inventarios optimizados.</li>
+
 <li>Reducción de mermas.</li>
+
 </ul>
+
 </div>
+
+
 
 <div class="card">
+
 <h3>🏛 Sector Público</h3>
+
 <ul>
+
 <li>Trámites digitales.</li>
+
 <li>Reducción de tiempos de atención.</li>
+
 </ul>
-</div>
 
 </div>
+
+
+
+</div>
+
 </section>
+
+
 
 <!-- 5. EVIDENCE -->
 
-<!-- NUEVA SECCIÓN: DESARROLLO WEB (FRONDIX) -->
-<section id="webs" class="alt">
-<h2>Desarrollo de Soluciones Web</h2>
-<div class="card" style="max-width:820px;margin:0 auto;text-align:center;">
-<p>
-Llevamos tu presencia digital al siguiente nivel con <strong>Frondix</strong>. 
-Diseñamos y desarrollamos páginas web corporativas, plataformas optimizadas para conversión 
-y sistemas web a medida enfocados en el rendimiento, la velocidad y la experiencia de usuario.
-</p>
-<div class="cta">
-<a href="https://www.frondix.com/" target="_blank">Visita Frondix.com</a>
-</div>
-</div>
-</section>
+
 
 <!-- APPS MOVILES -->
+
 <section id="apps">
+
 <h2>Desarrollo de Aplicaciones Móviles</h2>
+
 <div class="card" style="max-width:820px;margin:0 auto;text-align:center;">
+
 <p>
+
 Además de optimizar procesos, en <strong>AR Process</strong> desarrollamos
+
 <strong>software a medida</strong>, incluyendo <strong>aplicaciones móviles nativas</strong>,
+
 cuando el problema de negocio lo requiere: desde herramientas internas de
+
 productividad hasta apps orientadas al usuario final.
+
 </p>
+
 <div class="cta">
+
 <a href="masta-ice.html">Conoce nuestras apps</a>
+
 </div>
+
 </div>
+
 </section>
+
+
 
 <section id="resultados">
+
 <h2>Resultados comprobados</h2>
+
 <div class="grid">
-<div class="card">
-<h3>📊 Impacto promedio</h3>
-<ul>
-<li>-30% costos operativos</li>
-<li>-40% tiempos de proceso</li>
-<li>-80% errores</li>
-<li>+25% productivity</li>
-</ul>
-</div>
 
 <div class="card">
-<h3>🏢 Casos reales</h3>
+
+<h3>📊 Impacto promedio</h3>
+
 <ul>
-<li>Servicios: -40% tiempo de facturación</li>
-<li>Educación: -30% carga operativa</li>
-<li>Sector público: -50% tiempos</li>
+
+<li>-30% costos operativos</li>
+
+<li>-40% tiempos de proceso</li>
+
+<li>-80% errores</li>
+
+<li>+25% productividad</li>
+
 </ul>
+
 </div>
+
+
+
+<div class="card">
+
+<h3>🏢 Casos reales</h3>
+
+<ul>
+
+<li>Servicios: -40% tiempo de facturación</li>
+
+<li>Educación: -30% carga operativa</li>
+
+<li>Sector público: -50% tiempos</li>
+
+</ul>
+
 </div>
+
+</div>
+
 </section>
+
+
 
 <!-- 6. OFFER -->
+
 <section class="alt">
+
 <h2>Diagnóstico gratuito de procesos</h2>
+
 <div class="card">
+
 <p>
+
 Analizamos tu operación e identificamos dónde estás perdiendo dinero,
+
 tiempo y productividad.
+
 </p>
+
 <div class="cta">
+
 <a href="#contacto">Solicitar diagnóstico</a>
+
 </div>
+
 </div>
+
 </section>
 
-<!-- FAQ -->
+
+
+<!-- FAQ (reubicado antes del cierre) -->
+
 <section>
+
 <h2>Preguntas Frecuentes</h2>
 
+
+
 <details>
+
 <summary>¿Cuándo veré resultados?</summary>
+
 <p>Generalmente entre 4 y 8 semanas dependiendo del proceso.</p>
+
 </details>
 
+
+
 <details>
+
 <summary>¿Esto es costoso?</summary>
+
 <p>La mayoría de proyectos se paga con los ahorros generados.</p>
+
 </details>
 
+
+
 <details>
+
 <summary>¿La automatización reemplaza personal?</summary>
+
 <p>No. Libera tiempo para tareas de mayor valor.</p>
+
 </details>
+
+
 
 </section>
+
+
 
 <!-- 7. CLOSE -->
+
 <section id="contacto">
+
 <div class="contact">
+
 <h2>Hablemos</h2>
+
 <p>Respondemos en menos de 24 horas.</p>
 
+
+
 <form>
+
 <input type="text" placeholder="Nombre">
+
 <input type="text" placeholder="Empresa">
+
 <textarea placeholder="¿Qué proceso deseas optimizar?"></textarea>
+
 </form>
 
+
+
 <a class="whatsapp" href="https://wa.me/51925537270">📲 WhatsApp</a>
+
 <a class="email" href="mailto:lalvarezr@arprocessperu.com">✉ Correo</a>
+
 </div>
+
 </section>
 
+
+
 <footer style="text-align: center; padding: 25px 20px; color: #9ca3af; font-size: 0.85rem; line-height: 1.4;">
-  <p style="margin: 0 0 3px 0;">© 2026 AR Process. Todos los derechos reservados.</p>
-  <p style="margin: 0 0 3px 0;">
-    AR Process es una marca comercial operada por <strong style="color: #6b7280;">LUIS ALONSO ALVAREZ RIVERA E.I.R.L.</strong> | RUC: 20616027376
-  </p>
-  <p style="margin: 0;">
-    <a href="/politica-de-privacidad" style="color: #9ca3af; text-decoration: underline;">Política de Privacidad</a> | 
-    <a href="/terminos-y-condiciones" style="color: #9ca3af; text-decoration: underline;">Términos de Servicio</a>
-  </p>
+
+<p style="margin: 0 0 3px 0;">© 2026 AR Process. Todos los derechos reservados.</p>
+
+<p style="margin: 0 0 3px 0;">
+
+AR Process es una marca comercial operada por <strong style="color: #6b7280;">LUIS ALONSO ALVAREZ RIVERA E.I.R.L.</strong> | RUC: 20616027376
+
+</p>
+
+<p style="margin: 0;">
+
+<a href="/politica-de-privacidad" style="color: #9ca3af; text-decoration: underline;">Política de Privacidad</a> |
+
+<a href="/terminos-y-condiciones" style="color: #9ca3af; text-decoration: underline;">Términos de Servicio</a>
+
+</p>
+
 </footer>
 
-</body>
-</html>
 
-```
+
+</body>
+
+</html> 
+
