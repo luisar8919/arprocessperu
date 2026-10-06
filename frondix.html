@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frondix | AR Process</title>
+<meta name="description" content="Frondix: de un Excel desordenado a un sistema de clientes con cobro recurrente (Culqi) y recordatorios automáticos por WhatsApp. Caso de software propio de AR Process.">
+<style>
+body{
+    margin:0;
+    font-family:'Segoe UI',Tahoma,sans-serif;
+    background:#f8fafc;
+    color:#1f2937;
+}
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:90px 20px;
+}
+h1,h2,h3{letter-spacing:-0.5px}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:white;
+    box-shadow:0 6px 20px rgba(0,0,0,.08);
+}
+.nav-container{
+    max-width:1200px;
+    margin:auto;
+    padding:16px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.nav-logo img{height:48px;}
+.nav-links a{
+    margin-left:22px;
+    text-decoration:none;
+    font-weight:600;
+    color:#374151;
+}
+.nav-links a:hover{color:#1e40af}
+
+header{
+    background:linear-gradient(135deg,#0f172a,#1e40af);
+    color:white;
+    padding:80px 20px;
+}
+.header-flex{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+    max-width:900px;
+    margin:auto;
+    flex-wrap:wrap;
+}
+.header-icon{
+    width:180px;
+    height:180px;
+    border-radius:40px;
+    box-shadow:0 25px 40px rgba(0,0,0,.35);
+    flex-shrink:0;
+    background:rgba(255,255,255,.12);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:5.5rem;
+}
+.header-text{text-align:left;max-width:480px;}
+header h1{font-size:2.6rem;margin:0 0 12px;}
+header p{font-size:1.2rem;opacity:.9;line-height:1.7;margin:0;}
+
+@media(max-width:700px){
+    .header-flex{flex-direction:column;text-align:center;}
+    .header-text{text-align:center;max-width:100%;}
+}
+
+h2{
+    text-align:center;
+    margin-bottom:60px;
+    font-size:2.1rem;
+    color:#1e40af;
+}
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+.card{
+    background:white;
+    padding:36px;
+    border-radius:22px;
+    box-shadow:0 15px 30px rgba(0,0,0,.08);
+}
+.card h3{color:#1e40af}
+.card ul{padding-left:18px;line-height:1.7;}
+blockquote{
+    max-width:700px;
+    margin:40px auto 0;
+    padding-left:18px;
+    border-left:4px solid #1e40af;
+    font-style:italic;
+    font-size:1.1rem;
+}
+.alt{background:#f1f5f9}
+
+.contact{
+    background:#0f172a;
+    color:white;
+    padding:70px 30px;
+    border-radius:28px;
+    text-align:center;
+}
+.contact a{
+    display:inline-block;
+    margin:12px;
+    padding:16px 36px;
+    border-radius:16px;
+    font-weight:800;
+    text-decoration:none;
+}
+.whatsapp{background:#22c55e;color:#022c22}
+.email{background:#1e40af;color:white}
+.back-link{color:#9ca3af;text-decoration:none;font-size:.95rem;}
+.back-link:hover{color:white;}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#6b7280;
+    font-size:.85rem;
+}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="nav-container">
+<div class="nav-logo">
+    <img src="https://i.ibb.co/mrPbpfQg/logo-final.png" alt="AR Process">
+</div>
+<div class="nav-links">
+<a href="index.html">Inicio</a>
+<a href="index.html#apps">Proyectos</a>
+<a href="index.html#contacto">Contacto</a>
+</div>
+</div>
+</nav>
+
+<!-- ATENCIÓN: miedo/preocupación + dato duro + curiosidad -->
+<header>
+<div class="header-flex">
+<div class="header-icon">📊</div>
+<div class="header-text">
+<h1>Frondix</h1>
+<p>¿Cuánto te cuesta seguir administrando clientes en un Excel que solo tú entiendes? Frondix lo convierte en un sistema real en minutos, no en meses.</p>
+</div>
+</div>
+</header>
+
+<!-- PROBLEMA (atención) -->
+<section>
+<h2>El Excel de clientes que nadie se anima a tocar</h2>
+<div class="grid">
+<div class="card">
+<h3>❌ Sin visibilidad</h3>
+<p>Cada vendedor tiene su propia copia. Nadie sabe cuál es la versión real.</p>
+</div>
+<div class="card">
+<h3>❌ Cobros manuales</h3>
+<p>Recordar quién pagó, a quién cobrar y cuándo, a mano, mes tras mes.</p>
+</div>
+<div class="card">
+<h3>❌ Cero seguimiento</h3>
+<p>Ningún recordatorio automático. Los clientes se olvidan, y tú también.</p>
+</div>
+</div>
+</section>
+
+<!-- VENTA: qué hace (AIDA/beneficios) -->
+<section class="alt">
+<h2>Qué resuelve Frondix</h2>
+<div class="grid">
+<div class="card">
+<h3>📥 Sube el Excel, listo</h3>
+<p>Frondix lee el Excel, infiere columnas y tipos, y genera automáticamente la tabla y el formulario de carga sobre una base de datos Postgres real.</p>
+</div>
+<div class="card">
+<h3>💳 Cobro recurrente</h3>
+<p>Suscripción automática con tarjeta vía Culqi, o cargo manual por Yape, sin hojas de cálculo de cobranza paralelas.</p>
+</div>
+<div class="card">
+<h3>📲 Recordatorios por WhatsApp</h3>
+<p>Resumen semanal automático a cada dueño de empresa por WhatsApp Cloud API. Nadie tiene que acordarse de nada.</p>
+</div>
+<div class="card">
+<h3>🔒 Multiempresa y seguro</h3>
+<p>Cada empresa ve solo sus propios datos: aislamiento resuelto con seguridad por fila (RLS) a nivel de base de datos, no "a mano" en el código.</p>
+</div>
+</div>
+
+<blockquote>
+"Frondix no es una maqueta: es el mismo criterio de optimización de procesos que aplicamos en consultoría, llevado a software propio y en producción."
+</blockquote>
+</section>
+
+<!-- CREACIÓN / PRUEBA: datos duros medidos -->
+<section>
+<h2>Medido, no prometido</h2>
+<div class="grid">
+<div class="card">
+<h3>⚡ Rendimiento</h3>
+<ul>
+<li>20.000 filas por tabla, con aviso si hay más</li>
+<li>Carga: ~0,6s cada 1.000 filas (20.000 ≈ 12-16s)</li>
+<li>Búsqueda en pantalla con 20.000 filas: ~76 ms</li>
+</ul>
+</div>
+<div class="card">
+<h3>🏗️ Stack</h3>
+<ul>
+<li>Next.js (frontend + backend en un proyecto)</li>
+<li>Supabase: Postgres + Auth + seguridad por fila (RLS)</li>
+<li>Culqi (pagos) + WhatsApp Cloud API (mensajería)</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="alt">
+<div class="contact">
+<h2 style="color:white;">¿Quieres un sistema así para tu negocio?</h2>
+<p>Construimos software a medida —desde un Excel desordenado hasta un sistema en producción— igual que hicimos con Frondix.</p>
+<a class="whatsapp" href="https://wa.me/51925537270">📲 WhatsApp</a>
+<a class="email" href="mailto:lalvarezr@arprocessperu.com">✉ Correo</a>
+<div style="margin-top:20px;">
+<a class="back-link" href="index.html">← Volver a AR Process</a>
+</div>
+</div>
+</section>
+
+<footer>
+  <p style="margin: 0 0 3px 0;">© 2026 AR Process. Todos los derechos reservados.</p>
+  <p style="margin: 0;">
+    AR Process es una marca comercial operada por <strong style="color: #6b7280;">LUIS ALONSO ALVAREZ RIVERA E.I.R.L.</strong> | RUC: 20616027376
+  </p>
+</footer>
+
+</body>
+</html>
