@@ -457,6 +457,24 @@ details.mobile-menu{display:block}
 h2{font-size:1.9rem;margin-bottom:40px}
 .lead{margin:-20px auto 36px}
 }
+
+/* FLUJO: linea con flecha animada */
+.flow{position:relative}
+.flow-line{position:relative;height:6px;border-radius:99px;background:linear-gradient(90deg,#bfdbfe,#1e40af);margin:0 0 28px}
+.flow-arrow{position:absolute;top:50%;left:0;width:36px;height:36px;margin-top:-18px;border-radius:50%;background:#22c55e;color:#022c22;display:flex;align-items:center;justify-content:center;font-weight:900;box-shadow:0 4px 12px rgba(0,0,0,.2);animation:flowmove 4s ease-in-out infinite}
+@keyframes flowmove{0%{left:0;opacity:0}10%{opacity:1}90%{opacity:1}100%{left:calc(100% - 36px);opacity:0}}
+.flow-items{display:grid;gap:20px;align-items:stretch}
+.flow-items .card{padding:26px}
+.flow.cols-4 .flow-items{grid-template-columns:repeat(4,1fr)}
+.flow.cols-5 .flow-items{grid-template-columns:repeat(5,1fr)}
+.flow.cols-5 .card h3{font-size:1.05rem}
+.swipe-hint{display:none;text-align:right;color:#6b7280;font-size:.9rem;margin:-14px 0 10px}
+@media(max-width:1100px){
+.flow-items{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:14px;gap:16px}
+.flow-items>.card{flex:0 0 min(80%,300px);scroll-snap-align:start}
+.swipe-hint{display:block}
+}
+@media(prefers-reduced-motion:reduce){.flow-arrow{animation:none;left:calc(100% - 36px);opacity:1}}
 </style>
 
 </head>
@@ -574,7 +592,6 @@ Más de 10 años liderando TI en Pacífico EPS y Grupo BRECA · Máster en Intel
 <div class="card"><h3><span class="ico" aria-hidden="true">⚙</span>Optimización de procesos</h3><p>Eliminamos cuellos de botella, reprocesos y pérdidas operativas.</p></div>
 <div class="card"><h3><span class="ico" aria-hidden="true">🤖</span>Flujos con Power Automate</h3><ul><li>Excel, Outlook, SharePoint, Teams y aprobaciones.</li><li>Reportes y alertas que se generan solos.</li></ul></div>
 <div class="card"><h3><span class="ico" aria-hidden="true">🔗</span>Integraciones a medida</h3><p>APIs, WhatsApp y cobros conectados a tu operación.</p></div>
-<div class="card"><h3><span class="ico" aria-hidden="true">🏢</span>BPM empresarial</h3><p>Implementación y soporte de <strong>Appian</strong> y <strong>OnBase</strong>.</p></div>
 </div>
 <h3 class="sub">Antes → Después</h3>
 <div class="grid">
@@ -599,12 +616,16 @@ Más de 10 años liderando TI en Pacífico EPS y Grupo BRECA · Máster en Intel
 </div>
 
 <h3 class="sub">Industrias que optimizamos</h3>
-<div class="grid">
-<div class="card"><h3><span class="ico" aria-hidden="true">🎓</span>Educación</h3><ul><li>Automatización de admisiones, matrículas y pagos.</li><li>Optimización de horarios y reportes académicos.</li></ul></div>
-<div class="card"><h3><span class="ico" aria-hidden="true">🏥</span>Salud</h3><ul><li>Admisión y facturación más rápidas.</li><li>Menos errores administrativos.</li></ul></div>
-<div class="card"><h3><span class="ico" aria-hidden="true">💼</span>Servicios</h3><ul><li>Facturación y reportes automáticos.</li><li>Control de rentabilidad.</li></ul></div>
-<div class="card"><h3><span class="ico" aria-hidden="true">🏭</span>Comercio / Manufactura</h3><ul><li>Inventarios optimizados.</li><li>Reducción de mermas.</li></ul></div>
-<div class="card"><h3><span class="ico" aria-hidden="true">🏛</span>Sector Público</h3><ul><li>Trámites digitales.</li><li>Reducción de tiempos de atención.</li></ul></div>
+<div class="flow cols-5">
+<div class="flow-line" aria-hidden="true"><span class="flow-arrow">➜</span></div>
+<p class="swipe-hint" aria-hidden="true">Desliza →</p>
+<div class="flow-items" tabindex="0" role="region" aria-label="Industrias que optimizamos">
+<div class="card"><h3><span class="ico" aria-hidden="true">🎓</span>Educación</h3><p>Automatización de admisiones, matrículas y pagos. Horarios y reportes académicos.</p></div>
+<div class="card"><h3><span class="ico" aria-hidden="true">🏥</span>Salud</h3><p>Admisión y facturación más rápidas, con menos errores administrativos.</p></div>
+<div class="card"><h3><span class="ico" aria-hidden="true">💼</span>Servicios</h3><p>Facturación y reportes automáticos. Control de rentabilidad.</p></div>
+<div class="card"><h3><span class="ico" aria-hidden="true">🏭</span>Comercio / Manufactura</h3><p>Inventarios optimizados y reducción de mermas.</p></div>
+<div class="card"><h3><span class="ico" aria-hidden="true">🏛</span>Sector público</h3><p>Trámites digitales y menores tiempos de atención.</p></div>
+</div>
 </div>
 
 <div class="cta" style="text-align:center;"><a href="#contacto">Solicitar diagnóstico gratuito</a></div>
@@ -614,7 +635,10 @@ Más de 10 años liderando TI en Pacífico EPS y Grupo BRECA · Máster en Intel
 <section id="talleres">
 <h2>Talleres en vivo de IA y automatización</h2>
 <p class="lead">Sesiones online prácticas (Zoom / Google Meet), dictadas por Luis Álvarez, Máster en IA y líder de TI con más de 10 años de experiencia. También en versión in-company para tu equipo.</p>
-<div class="grid">
+<div class="flow cols-4">
+<div class="flow-line" aria-hidden="true"><span class="flow-arrow">➜</span></div>
+<p class="swipe-hint" aria-hidden="true">Desliza →</p>
+<div class="flow-items" tabindex="0" role="region" aria-label="Talleres">
 <div class="card"><span class="badge">Próximamente</span>
 <h3><span class="ico" aria-hidden="true">⚙️</span>Power Automate y Copilot</h3>
 <p>Automatiza tareas repetitivas de tu día a día: Excel, Outlook, Teams y aprobaciones, sin programar.</p>
@@ -635,6 +659,7 @@ Más de 10 años liderando TI en Pacífico EPS y Grupo BRECA · Máster en Intel
 <p>Planifica, da seguimiento y reporta proyectos más rápido con IA, bajo enfoque PMI y ágil.</p>
 <div class="outcome"><strong>Al final podrás:</strong> generar con IA tu plan, matriz de riesgos e informe de avance.</div>
 <div class="cta"><a href="https://forms.gle/fkG6rGJYyRoypvyz8" target="_blank" rel="noopener" class="sm">Unirme a la lista de espera</a></div></div>
+</div>
 </div>
 <p class="bridge">¿Quieres alguno de estos talleres para tu equipo? <a href="https://wa.me/51998235775?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20talleres%20in-company" target="_blank" rel="noopener"><strong>Escríbenos por WhatsApp</strong></a>.</p>
 </section>
