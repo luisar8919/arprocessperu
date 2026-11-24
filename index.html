@@ -458,23 +458,19 @@ h2{font-size:1.9rem;margin-bottom:40px}
 .lead{margin:-20px auto 36px}
 }
 
-/* FLUJO: linea con flecha animada */
-.flow{position:relative}
-.flow-line{position:relative;height:6px;border-radius:99px;background:linear-gradient(90deg,#bfdbfe,#1e40af);margin:0 0 28px}
-.flow-arrow{position:absolute;top:50%;left:0;width:36px;height:36px;margin-top:-18px;border-radius:50%;background:#22c55e;color:#022c22;display:flex;align-items:center;justify-content:center;font-weight:900;box-shadow:0 4px 12px rgba(0,0,0,.2);animation:flowmove 4s ease-in-out infinite}
-@keyframes flowmove{0%{left:0;opacity:0}10%{opacity:1}90%{opacity:1}100%{left:calc(100% - 36px);opacity:0}}
-.flow-items{display:grid;gap:20px;align-items:stretch}
-.flow-items .card{padding:26px}
-.flow.cols-4 .flow-items{grid-template-columns:repeat(4,1fr)}
-.flow.cols-5 .flow-items{grid-template-columns:repeat(5,1fr)}
-.flow.cols-5 .card h3{font-size:1.05rem}
-.swipe-hint{display:none;text-align:right;color:#6b7280;font-size:.9rem;margin:-14px 0 10px}
-@media(max-width:1100px){
-.flow-items{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:14px;gap:16px}
-.flow-items>.card{flex:0 0 min(80%,300px);scroll-snap-align:start}
-.swipe-hint{display:block}
-}
-@media(prefers-reduced-motion:reduce){.flow-arrow{animation:none;left:calc(100% - 36px);opacity:1}}
+/* CARRUSEL */
+.carousel{position:relative}
+.carousel-track{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:10px 4px 26px}
+.carousel-track::-webkit-scrollbar{display:none}
+.carousel-track>.card{flex:0 0 calc((100% - 40px)/3);scroll-snap-align:start;padding:26px;box-sizing:border-box}
+.carousel-track>.card:last-child{scroll-snap-align:end}
+.car-btn{display:none;position:absolute;top:50%;transform:translateY(-60%);z-index:2;width:48px;height:48px;border-radius:50%;border:0;background:#fff;color:#1e40af;font-size:2rem;line-height:1;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+.carousel.is-js .car-btn{display:flex;align-items:center;justify-content:center}
+.car-btn.prev{left:-14px}.car-btn.next{right:-14px}
+.car-btn:disabled{opacity:.35;cursor:default}
+.car-btn:hover:not(:disabled){background:#1e40af;color:#fff}
+@media(max-width:1100px){.carousel-track>.card{flex-basis:calc((100% - 20px)/2)}}
+@media(max-width:700px){.carousel-track>.card{flex-basis:85%}.car-btn.prev{left:-8px}.car-btn.next{right:-8px}}
 </style>
 
 </head>
@@ -547,7 +543,7 @@ Más de 10 años liderando TI en Pacífico EPS y Grupo BRECA · Máster en Intel
 </div>
 <div class="card" style="text-align:center;">
 <p class="stat">-80%</p>
-<p>tiempo de respuesta en procesos críticos de negocio (BPM + IA)</p>
+<p>tiempo de respuesta en procesos críticos de negocio (con IA y automatización)</p>
 </div>
 <div class="card" style="text-align:center;">
 <p class="stat">+30h</p>
@@ -616,16 +612,16 @@ Más de 10 años liderando TI en Pacífico EPS y Grupo BRECA · Máster en Intel
 </div>
 
 <h3 class="sub">Industrias que optimizamos</h3>
-<div class="flow cols-5">
-<div class="flow-line" aria-hidden="true"><span class="flow-arrow">➜</span></div>
-<p class="swipe-hint" aria-hidden="true">Desliza →</p>
-<div class="flow-items" tabindex="0" role="region" aria-label="Industrias que optimizamos">
+<div class="carousel" data-carousel>
+<button type="button" class="car-btn prev" aria-label="Anterior" disabled>‹</button>
+<div class="carousel-track" tabindex="0" role="region" aria-label="Industrias que optimizamos">
 <div class="card"><h3><span class="ico" aria-hidden="true">🎓</span>Educación</h3><p>Automatización de admisiones, matrículas y pagos. Horarios y reportes académicos.</p></div>
 <div class="card"><h3><span class="ico" aria-hidden="true">🏥</span>Salud</h3><p>Admisión y facturación más rápidas, con menos errores administrativos.</p></div>
 <div class="card"><h3><span class="ico" aria-hidden="true">💼</span>Servicios</h3><p>Facturación y reportes automáticos. Control de rentabilidad.</p></div>
 <div class="card"><h3><span class="ico" aria-hidden="true">🏭</span>Comercio / Manufactura</h3><p>Inventarios optimizados y reducción de mermas.</p></div>
 <div class="card"><h3><span class="ico" aria-hidden="true">🏛</span>Sector público</h3><p>Trámites digitales y menores tiempos de atención.</p></div>
 </div>
+<button type="button" class="car-btn next" aria-label="Siguiente">›</button>
 </div>
 
 <div class="cta" style="text-align:center;"><a href="#contacto">Solicitar diagnóstico gratuito</a></div>
@@ -635,10 +631,9 @@ Más de 10 años liderando TI en Pacífico EPS y Grupo BRECA · Máster en Intel
 <section id="talleres">
 <h2>Talleres en vivo de IA y automatización</h2>
 <p class="lead">Sesiones online prácticas (Zoom / Google Meet), dictadas por Luis Álvarez, Máster en IA y líder de TI con más de 10 años de experiencia. También en versión in-company para tu equipo.</p>
-<div class="flow cols-4">
-<div class="flow-line" aria-hidden="true"><span class="flow-arrow">➜</span></div>
-<p class="swipe-hint" aria-hidden="true">Desliza →</p>
-<div class="flow-items" tabindex="0" role="region" aria-label="Talleres">
+<div class="carousel" data-carousel>
+<button type="button" class="car-btn prev" aria-label="Anterior" disabled>‹</button>
+<div class="carousel-track" tabindex="0" role="region" aria-label="Talleres">
 <div class="card"><span class="badge">Próximamente</span>
 <h3><span class="ico" aria-hidden="true">⚙️</span>Power Automate y Copilot</h3>
 <p>Automatiza tareas repetitivas de tu día a día: Excel, Outlook, Teams y aprobaciones, sin programar.</p>
@@ -660,6 +655,7 @@ Más de 10 años liderando TI en Pacífico EPS y Grupo BRECA · Máster en Intel
 <div class="outcome"><strong>Al final podrás:</strong> generar con IA tu plan, matriz de riesgos e informe de avance.</div>
 <div class="cta"><a href="https://forms.gle/fkG6rGJYyRoypvyz8" target="_blank" rel="noopener" class="sm">Unirme a la lista de espera</a></div></div>
 </div>
+<button type="button" class="car-btn next" aria-label="Siguiente">›</button>
 </div>
 <p class="bridge">¿Quieres alguno de estos talleres para tu equipo? <a href="https://wa.me/51998235775?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20talleres%20in-company" target="_blank" rel="noopener"><strong>Escríbenos por WhatsApp</strong></a>.</p>
 </section>
@@ -734,7 +730,7 @@ Ingeniero de Sistemas con más de <strong>10 años de experiencia</strong> lider
 </p>
 <p>
 <strong>No es teoría de consultor.</strong> Es el mismo criterio con el que dirigió equipos técnicos y plataformas
-críticas de negocio (BPM, Cloud, automatización), aplicado a PYMES y empresas medianas que no tienen un área de TI de ese tamaño.
+críticas de negocio (Cloud, automatización), aplicado a PYMES y empresas medianas que no tienen un área de TI de ese tamaño.
 </p>
 <blockquote>
 “No se trata de implementar tecnología, sino de generar valor económico real y medible.”
@@ -803,6 +799,7 @@ AR Process es una marca comercial operada por <strong style="color: #6b7280;">LU
 
 
 <script src="video.js" defer></script>
+<script src="carousel.js" defer></script>
 </body>
 
 </html> 
