@@ -1,5 +1,6 @@
 (function () {
   var SPEED = 24; // px por segundo: movimiento lento
+  var RESUME = 3000; // ms de espera antes de retomar el movimiento
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   document.querySelectorAll('[data-carousel]').forEach(function (c) {
@@ -41,18 +42,7 @@
     var pos = null;
     var last = 0;
 
-    var pause = document.createElement('button');
-    pause.type = 'button';
-    pause.className = 'car-pause';
-    function label() {
-      pause.textContent = playing ? '⏸ Pausar' : '▶ Reanudar';
-      pause.setAttribute('aria-label', playing ? 'Pausar el movimiento del carrusel' : 'Reanudar el movimiento del carrusel');
-    }
-    label();
-    pause.addEventListener('click', function () { playing = !playing; pos = null; label(); });
-    c.appendChild(pause);
-
-    function touch() { hold = performance.now() + 4000; pos = null; }
+    function touch() { hold = performance.now() + RESUME; pos = null; }
     prev.addEventListener('click', function () {
       touch();
       if (t.scrollLeft < 2 * step()) t.scrollLeft += setW();
@@ -67,7 +57,8 @@
       t.addEventListener(ev, touch, { passive: true });
     });
     c.addEventListener('mouseenter', function () { hover = true; pos = null; });
-    c.addEventListener('mouseleave', function () { hover = false; pos = null; });
+    c.addEventListener('mouseleave', function () { hover = false; touch(); });
+    c.addEventListener('focusout', touch);
     window.addEventListener('resize', function () { normalize(); pos = null; });
 
     if ('IntersectionObserver' in window) {

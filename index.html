@@ -469,8 +469,6 @@ h2{font-size:1.9rem;margin-bottom:40px}
 .opp .how{margin:0;color:#4b5563;font-size:.95rem}
 .carousel.is-js .carousel-track{scroll-snap-type:none}
 .carousel.small .carousel-track>.card{flex-basis:calc((100% - 60px)/4);padding:22px}
-.car-pause{display:none;position:absolute;left:50%;bottom:-8px;transform:translateX(-50%);z-index:2;border:0;border-radius:99px;background:#fff;color:#1e40af;font-weight:700;font-size:.9rem;padding:8px 16px;min-height:40px;box-shadow:0 4px 14px rgba(0,0,0,.2);cursor:pointer}
-.carousel.is-js .car-pause{display:inline-block}
 @media(max-width:1100px){.carousel.small .carousel-track>.card{flex-basis:calc((100% - 20px)/2)}}
 @media(max-width:700px){.carousel.small .carousel-track>.card{flex-basis:70%}}
 /* CARRUSEL */
@@ -589,11 +587,15 @@ Más de 10 años liderando TI en Pacífico EPS y Grupo BRECA · Máster en Intel
 <section id="ia">
 <h2>IA en negocios</h2>
 <p class="lead">Convertimos la IA en resultados medibles para tu operación, sin experimentos eternos.</p>
-<div class="grid">
+<div class="carousel" data-carousel>
+<button type="button" class="car-btn prev" aria-label="Anterior">‹</button>
+<div class="carousel-track" tabindex="0" role="region" aria-label="IA en negocios">
 <div class="card"><h3><span class="ico" aria-hidden="true">🤖</span>Asistentes y copilotos</h3><p>Prototipos con Copilot Studio y AI Builder para responder consultas internas y de clientes, y apoyar procesos del día a día.</p></div>
 <div class="card"><h3><span class="ico" aria-hidden="true">📊</span>Análisis de datos con IA</h3><p>Power BI, Excel avanzado e IA para pasar de la intuición a decisiones con indicadores confiables.</p></div>
 <div class="card"><h3><span class="ico" aria-hidden="true">💬</span>Atención por WhatsApp</h3><p>Integración con WhatsApp Business para notificar y atender a tus clientes de forma automática.</p></div>
 <div class="card"><h3><span class="ico" aria-hidden="true">📈</span>Casos de negocio medibles</h3><p>Antes de implementar, definimos el indicador que vamos a mover: tiempo, costo o errores.</p></div>
+</div>
+<button type="button" class="car-btn next" aria-label="Siguiente">›</button>
 </div>
 <p class="bridge"><strong>Ejemplo real:</strong> en Frondix, la IA (Gemini) lee el Excel del cliente y sugiere cómo organizar sus datos, reduciendo la configuración manual al dar de alta un negocio.</p>
 <div class="cta" style="text-align:center;"><a href="#contacto">Diagnóstico gratuito de IA</a><a href="#talleres" class="ghost">Aprender en un taller</a></div>
