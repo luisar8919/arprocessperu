@@ -458,6 +458,15 @@ h2{font-size:1.9rem;margin-bottom:40px}
 .lead{margin:-20px auto 36px}
 }
 
+.opp{display:flex;flex-direction:column;gap:12px}
+.opp h3{margin:0}
+.tag{align-self:flex-start;background:#fef3c7;color:#92400e;padding:4px 12px;border-radius:99px;font-size:.875rem;font-weight:700}
+.tag.real{background:#dcfce7;color:#166534}
+.ba2{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center;background:#eff6ff;border-radius:14px;padding:14px}
+.ba2 small{font-size:.75rem;letter-spacing:.08em;color:#6b7280;font-weight:700}
+.ba2 p{margin:4px 0 0;font-size:.95rem}
+.ba2 .arrow{font-size:1.6rem;color:#1e40af}
+.opp .how{margin:0;color:#4b5563;font-size:.95rem}
 /* CARRUSEL */
 .carousel{position:relative}
 .carousel-track{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:10px 4px 26px}
@@ -589,37 +598,35 @@ Más de 10 años liderando TI en Pacífico EPS y Grupo BRECA · Máster en Intel
 <div class="card"><h3><span class="ico" aria-hidden="true">🤖</span>Flujos con Power Automate</h3><ul><li>Excel, Outlook, SharePoint, Teams y aprobaciones.</li><li>Reportes y alertas que se generan solos.</li></ul></div>
 <div class="card"><h3><span class="ico" aria-hidden="true">🔗</span>Integraciones a medida</h3><p>APIs, WhatsApp y cobros conectados a tu operación.</p></div>
 </div>
-<h3 class="sub">Antes → Después</h3>
-<div class="grid">
-<div class="card ba">
-<p><strong>Antes</strong><br>Facturación y reportes manuales</p>
-<p class="arrow">→</p>
-<p><strong>Después</strong><br>-40% tiempo de facturación</p>
-<small>Sector servicios · automatización de flujos</small>
-</div>
-<div class="card ba">
-<p><strong>Antes</strong><br>Admisiones, matrículas y pagos manuales</p>
-<p class="arrow">→</p>
-<p><strong>Después</strong><br>-30% carga operativa</p>
-<small>Educación · automatización de procesos</small>
-</div>
-<div class="card ba">
-<p><strong>Antes</strong><br>Trámites lentos</p>
-<p class="arrow">→</p>
-<p><strong>Después</strong><br>-50% tiempos de atención</p>
-<small>Sector público · trámites digitales</small>
-</div>
-</div>
-
-<h3 class="sub">Industrias que optimizamos</h3>
+<h3 class="sub">Oportunidades de optimización por sector</h3>
 <div class="carousel" data-carousel>
 <button type="button" class="car-btn prev" aria-label="Anterior" disabled>‹</button>
-<div class="carousel-track" tabindex="0" role="region" aria-label="Industrias que optimizamos">
-<div class="card"><h3><span class="ico" aria-hidden="true">🎓</span>Educación</h3><p>Automatización de admisiones, matrículas y pagos. Horarios y reportes académicos.</p></div>
-<div class="card"><h3><span class="ico" aria-hidden="true">🏥</span>Salud</h3><p>Admisión y facturación más rápidas, con menos errores administrativos.</p></div>
-<div class="card"><h3><span class="ico" aria-hidden="true">💼</span>Servicios</h3><p>Facturación y reportes automáticos. Control de rentabilidad.</p></div>
-<div class="card"><h3><span class="ico" aria-hidden="true">🏭</span>Comercio / Manufactura</h3><p>Inventarios optimizados y reducción de mermas.</p></div>
-<div class="card"><h3><span class="ico" aria-hidden="true">🏛</span>Sector público</h3><p>Trámites digitales y menores tiempos de atención.</p></div>
+<div class="carousel-track" tabindex="0" role="region" aria-label="Oportunidades de optimización por sector">
+<div class="card opp"><span class="tag real">Resultado medido</span>
+<h3><span class="ico" aria-hidden="true">💼</span>Servicios</h3>
+<div class="ba2"><div><small>ANTES</small><p>Facturación y reportes manuales</p></div><span class="arrow" aria-hidden="true">→</span><div><small>DESPUÉS</small><p><strong>-40%</strong> tiempo de facturación</p></div></div>
+<p class="how">Facturación y reportes automáticos. Control de rentabilidad.</p>
+</div>
+<div class="card opp"><span class="tag real">Resultado medido</span>
+<h3><span class="ico" aria-hidden="true">🎓</span>Educación</h3>
+<div class="ba2"><div><small>ANTES</small><p>Admisiones, matrículas y pagos manuales</p></div><span class="arrow" aria-hidden="true">→</span><div><small>DESPUÉS</small><p><strong>-30%</strong> carga operativa</p></div></div>
+<p class="how">Automatización de admisiones, matrículas y pagos. Horarios y reportes académicos.</p>
+</div>
+<div class="card opp"><span class="tag real">Resultado medido</span>
+<h3><span class="ico" aria-hidden="true">🏛</span>Sector público</h3>
+<div class="ba2"><div><small>ANTES</small><p>Trámites lentos</p></div><span class="arrow" aria-hidden="true">→</span><div><small>DESPUÉS</small><p><strong>-50%</strong> tiempos de atención</p></div></div>
+<p class="how">Trámites digitales y menores tiempos de atención.</p>
+</div>
+<div class="card opp"><span class="tag">Oportunidad</span>
+<h3><span class="ico" aria-hidden="true">🏥</span>Salud</h3>
+<div class="ba2"><div><small>ANTES</small><p>Admisión y facturación lentas</p></div><span class="arrow" aria-hidden="true">→</span><div><small>DESPUÉS</small><p>Más rápidas y con menos errores administrativos</p></div></div>
+<p class="how">Admisión y facturación más rápidas, con menos errores.</p>
+</div>
+<div class="card opp"><span class="tag">Oportunidad</span>
+<h3><span class="ico" aria-hidden="true">🏭</span>Comercio / Manufactura</h3>
+<div class="ba2"><div><small>ANTES</small><p>Inventarios sin optimizar y mermas</p></div><span class="arrow" aria-hidden="true">→</span><div><small>DESPUÉS</small><p>Inventarios optimizados y menos mermas</p></div></div>
+<p class="how">Inventarios optimizados y reducción de mermas.</p>
+</div>
 </div>
 <button type="button" class="car-btn next" aria-label="Siguiente">›</button>
 </div>
