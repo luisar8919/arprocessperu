@@ -18,6 +18,19 @@
 
 
 
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://www.arprocessperu.com/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_PE">
+<meta property="og:site_name" content="AR Process">
+<meta property="og:title" content="AR Process | IA en negocios, automatización y talleres">
+<meta property="og:description" content="IA en negocios, automatización de procesos y talleres en vivo para PYMES. Liderado por Luis Álvarez, Máster en IA con más de 10 años liderando TI en Pacífico EPS y Grupo BRECA.">
+<meta property="og:url" content="https://www.arprocessperu.com/">
+<meta property="og:image" content="https://www.arprocessperu.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1e40af">
 <style>
 
 body{
@@ -402,6 +415,48 @@ header .cta a.ghost{color:white;border-color:white}
 .ba p{margin:0}.ba .arrow{font-size:1.8rem;color:#1e40af}.ba small{grid-column:1/-1;color:#6b7280}
 @media(max-width:900px){.nav-links a:not(.nav-cta){display:none}.nav-links{display:flex}.hero h1{font-size:2rem}.cta a.ghost{margin-left:0}}
 .pillar{display:block;text-decoration:none;color:inherit;transition:transform .15s}.pillar:hover{transform:translateY(-4px)}.pillar strong{color:#1e40af}
+
+/* MEJORAS FRONTEND */
+.nav-links a{white-space:nowrap}
+@media(max-width:1100px){.nav-links a{margin-left:12px;font-size:.92rem}.nav-links a.nav-cta{padding:10px 12px}}
+.nav-logo img{width:auto;max-width:100%}
+.profile-image img{height:auto}
+body{font-family:system-ui,'Segoe UI',Roboto,Tahoma,sans-serif}
+a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid #f59e0b;outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:0;background:#1e40af;color:#fff;padding:12px 18px;z-index:2000;border-radius:0 0 10px 0}
+.skip:focus{left:0}
+footer,footer p,footer a{color:#4b5563!important;font-size:.9rem!important}
+.nav-links a{padding:12px 4px}
+.badge{font-size:.875rem}
+.ba small{font-size:.875rem}
+.card p a,.bridge a,.about a,.faq a{display:inline-block;padding:10px 0}
+.ico{display:inline-flex;align-items:center;justify-content:center;width:1.9em;height:1.9em;border-radius:50%;background:#eff6ff;margin-right:8px;font-size:.85em}
+.stat{font-size:2rem;font-weight:700;color:#1e40af;margin:0 0 6px}
+.stats .card p{margin:0}
+.nav-links a.nav-cta{background:#1e40af;color:#fff;padding:10px 18px}
+.cta a.sm{background:#1e40af;color:#fff}
+.cta a.sm.go{background:#22c55e;color:#022c22}
+.hero p.sub-h{margin-top:18px}
+details.mobile-menu{display:none;position:relative;padding:0;margin:0;background:none;box-shadow:none;border-radius:0}
+.mobile-menu summary{list-style:none;cursor:pointer;font-weight:700;color:#1e40af;padding:12px 16px;border:2px solid #1e40af;border-radius:12px;min-height:20px}
+.mobile-menu summary::-webkit-details-marker{display:none}
+.mm-links{position:absolute;right:0;top:56px;background:#fff;box-shadow:0 12px 30px rgba(0,0,0,.18);border-radius:14px;padding:8px;min-width:230px;display:flex;flex-direction:column}
+.mm-links a{padding:14px 16px;color:#1f2937;text-decoration:none;font-weight:600;border-radius:10px}
+.mm-links a:hover{background:#eff6ff}
+.video-facade{position:absolute;inset:0;width:100%;height:100%;border:0;padding:0;cursor:pointer;background:#000}
+.video-facade img{width:100%;height:100%;object-fit:cover;opacity:.85}
+.video-facade span{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:76px;height:76px;border-radius:50%;background:#22c55e;color:#022c22;font-size:2rem;display:flex;align-items:center;justify-content:center;padding-left:6px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.pillar:hover{transform:none}}
+@media(max-width:900px){
+section{padding:56px 20px}
+header{padding:70px 20px}
+.nav-links{display:none!important}
+details.mobile-menu{display:block}
+.nav-container{padding:12px 20px}
+.hero h1{font-size:2rem}
+h2{font-size:1.9rem;margin-bottom:40px}
+.lead{margin:-20px auto 36px}
+}
 </style>
 
 </head>
@@ -412,10 +467,11 @@ header .cta a.ghost{color:white;border-color:white}
 
 
 
-<nav>
+<a class="skip" href="#main">Saltar al contenido</a>
+<nav aria-label="Principal">
 <div class="nav-container">
 <div class="nav-logo">
-<a href="#"><img src="logo.png" alt="AR Process"></a>
+<a href="#"><img src="logo.png" alt="AR Process" width="640" height="178"></a>
 </div>
 <div class="nav-links">
 <a href="#ia">IA en negocios</a>
@@ -426,6 +482,18 @@ header .cta a.ghost{color:white;border-color:white}
 <a href="#contacto">Contacto</a>
 <a href="https://forms.gle/fkG6rGJYyRoypvyz8" target="_blank" rel="noopener" class="nav-cta">Lista de espera</a>
 </div>
+<details class="mobile-menu">
+<summary aria-label="Abrir menú">☰ Menú</summary>
+<div class="mm-links">
+<a href="#ia">IA en negocios</a>
+<a href="#automatizacion">Automatización</a>
+<a href="#talleres">Talleres</a>
+<a href="#apps">Productos</a>
+<a href="#conocenos">Sobre mí</a>
+<a href="#contacto">Contacto</a>
+<a href="https://forms.gle/fkG6rGJYyRoypvyz8" target="_blank" rel="noopener">Lista de espera</a>
+</div>
+</details>
 </div>
 </nav>
 
@@ -433,8 +501,8 @@ header .cta a.ghost{color:white;border-color:white}
 <header>
 <div class="hero">
 <div>
-<h1>Pon la IA a trabajar en tu negocio: automatiza tus procesos y aprende a hacerlo</h1>
-<p>Lideré soluciones de IA que redujeron <strong>80%</strong> los tiempos de procesos críticos. Hoy ayudo a PYMES con <strong>IA en negocios</strong>, <strong>automatización de procesos</strong> y <strong>talleres en vivo</strong>.</p>
+<h1>Pon la IA a trabajar en tu negocio</h1>
+<p class="sub-h">Automatiza tus procesos y aprende a hacerlo. Lideré soluciones de IA que redujeron <strong>80%</strong> los tiempos de procesos críticos; hoy ayudo a PYMES con <strong>IA en negocios</strong>, <strong>automatización de procesos</strong> y <strong>talleres en vivo</strong>.</p>
 <div class="cta">
 <a href="#talleres">Ver talleres</a>
 <a href="#contacto" class="ghost">Diagnóstico gratuito</a>
@@ -444,29 +512,32 @@ Más de 10 años liderando TI en Pacífico EPS y Grupo BRECA · Máster en Intel
 </div>
 </div>
 <div class="video">
-<iframe src="https://www.youtube-nocookie.com/embed/DBdC5Y5vNuo" title="AR Process: presentación" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<button class="video-facade" data-yt="DBdC5Y5vNuo" aria-label="Reproducir video de presentación"><img src="https://i.ytimg.com/vi/DBdC5Y5vNuo/hqdefault.jpg" alt="" width="480" height="360"><span aria-hidden="true">▶</span></button>
+<noscript><iframe src="https://www.youtube-nocookie.com/embed/DBdC5Y5vNuo" title="AR Process: presentación" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe></noscript>
 </div>
 </div>
 </header>
+
+<main id="main">
 
 <!-- 2. CIFRAS: datos duros + prueba personal -->
 <section class="stats">
 <div class="grid">
 <div class="card" style="text-align:center;">
-<h3 style="font-size:2rem;margin:0 0 6px;">10+</h3>
-<p style="margin:0;">años liderando TI en empresas grandes (seguros, holding BRECA)</p>
+<p class="stat">10+</p>
+<p>años liderando TI en empresas grandes (seguros, holding BRECA)</p>
 </div>
 <div class="card" style="text-align:center;">
-<h3 style="font-size:2rem;margin:0 0 6px;">-80%</h3>
-<p style="margin:0;">tiempo de respuesta en procesos críticos de negocio (BPM + IA)</p>
+<p class="stat">-80%</p>
+<p>tiempo de respuesta en procesos críticos de negocio (BPM + IA)</p>
 </div>
 <div class="card" style="text-align:center;">
-<h3 style="font-size:2rem;margin:0 0 6px;">+30h</h3>
-<p style="margin:0;">hombre al mes ahorradas automatizando con Power Automate</p>
+<p class="stat">+30h</p>
+<p>hombre al mes ahorradas automatizando con Power Automate</p>
 </div>
 <div class="card" style="text-align:center;">
-<h3 style="font-size:2rem;margin:0 0 6px;">99.9%</h3>
-<p style="margin:0;">disponibilidad en plataformas Cloud bajo su gestión</p>
+<p class="stat">99.9%</p>
+<p>disponibilidad en plataformas Cloud bajo su gestión</p>
 </div>
 </div>
 </section>
@@ -475,9 +546,9 @@ Más de 10 años liderando TI en Pacífico EPS y Grupo BRECA · Máster en Intel
 <section id="pilares" class="alt">
 <h2>Tres formas de poner la IA a trabajar en tu negocio</h2>
 <div class="grid">
-<a href="#ia" class="card pillar"><h3>🧠 IA en negocios</h3><p>Asistentes, análisis de datos y atención al cliente con IA, enfocados en resultados medibles.</p><strong>Ver más →</strong></a>
-<a href="#automatizacion" class="card pillar"><h3>⚙️ Automatización de procesos</h3><p>Flujos, integraciones y reportes que se hacen solos para reducir tiempos, errores y costos.</p><strong>Ver más →</strong></a>
-<a href="#talleres" class="card pillar"><h3>🎓 Talleres</h3><p>Aprende a aplicar IA y automatización en sesiones online prácticas y en vivo.</p><strong>Ver más →</strong></a>
+<a href="#ia" class="card pillar"><h3><span class="ico" aria-hidden="true">🧠</span>IA en negocios</h3><p>Asistentes, análisis de datos y atención al cliente con IA, enfocados en resultados medibles.</p><strong>Ver más →</strong></a>
+<a href="#automatizacion" class="card pillar"><h3><span class="ico" aria-hidden="true">⚙️</span>Automatización de procesos</h3><p>Flujos, integraciones y reportes que se hacen solos para reducir tiempos, errores y costos.</p><strong>Ver más →</strong></a>
+<a href="#talleres" class="card pillar"><h3><span class="ico" aria-hidden="true">🎓</span>Talleres</h3><p>Aprende a aplicar IA y automatización en sesiones online prácticas y en vivo.</p><strong>Ver más →</strong></a>
 </div>
 </section>
 
@@ -486,10 +557,10 @@ Más de 10 años liderando TI en Pacífico EPS y Grupo BRECA · Máster en Intel
 <h2>IA en negocios</h2>
 <p class="lead">Convertimos la IA en resultados medibles para tu operación, sin experimentos eternos.</p>
 <div class="grid">
-<div class="card"><h3>🤖 Asistentes y copilotos</h3><p>Prototipos con Copilot Studio y AI Builder para responder consultas internas y de clientes, y apoyar procesos del día a día.</p></div>
-<div class="card"><h3>📊 Análisis de datos con IA</h3><p>Power BI, Excel avanzado e IA para pasar de la intuición a decisiones con indicadores confiables.</p></div>
-<div class="card"><h3>💬 Atención por WhatsApp</h3><p>Integración con WhatsApp Business para notificar y atender a tus clientes de forma automática.</p></div>
-<div class="card"><h3>📈 Casos de negocio medibles</h3><p>Antes de implementar, definimos el indicador que vamos a mover: tiempo, costo o errores.</p></div>
+<div class="card"><h3><span class="ico" aria-hidden="true">🤖</span>Asistentes y copilotos</h3><p>Prototipos con Copilot Studio y AI Builder para responder consultas internas y de clientes, y apoyar procesos del día a día.</p></div>
+<div class="card"><h3><span class="ico" aria-hidden="true">📊</span>Análisis de datos con IA</h3><p>Power BI, Excel avanzado e IA para pasar de la intuición a decisiones con indicadores confiables.</p></div>
+<div class="card"><h3><span class="ico" aria-hidden="true">💬</span>Atención por WhatsApp</h3><p>Integración con WhatsApp Business para notificar y atender a tus clientes de forma automática.</p></div>
+<div class="card"><h3><span class="ico" aria-hidden="true">📈</span>Casos de negocio medibles</h3><p>Antes de implementar, definimos el indicador que vamos a mover: tiempo, costo o errores.</p></div>
 </div>
 <p class="bridge"><strong>Ejemplo real:</strong> en Frondix, la IA (Gemini) lee el Excel del cliente y sugiere cómo organizar sus datos, reduciendo la configuración manual al dar de alta un negocio.</p>
 <div class="cta" style="text-align:center;"><a href="#contacto">Diagnóstico gratuito de IA</a><a href="#talleres" class="ghost">Aprender en un taller</a></div>
@@ -500,10 +571,10 @@ Más de 10 años liderando TI en Pacífico EPS y Grupo BRECA · Máster en Intel
 <h2>Automatización de procesos</h2>
 <p class="lead">Eliminamos cuellos de botella y trabajo manual con el mismo nivel de gestión de una aseguradora grande, adaptado a tu empresa.</p>
 <div class="grid">
-<div class="card"><h3>⚙ Optimización de procesos</h3><p>Eliminamos cuellos de botella, reprocesos y pérdidas operativas.</p></div>
-<div class="card"><h3>🤖 Flujos con Power Automate</h3><ul><li>Excel, Outlook, SharePoint, Teams y aprobaciones.</li><li>Reportes y alertas que se generan solos.</li></ul></div>
-<div class="card"><h3>🔗 Integraciones a medida</h3><p>APIs, WhatsApp y cobros conectados a tu operación.</p></div>
-<div class="card"><h3>🏢 BPM empresarial</h3><p>Implementación y soporte de <strong>Appian</strong> y <strong>OnBase</strong>.</p></div>
+<div class="card"><h3><span class="ico" aria-hidden="true">⚙</span>Optimización de procesos</h3><p>Eliminamos cuellos de botella, reprocesos y pérdidas operativas.</p></div>
+<div class="card"><h3><span class="ico" aria-hidden="true">🤖</span>Flujos con Power Automate</h3><ul><li>Excel, Outlook, SharePoint, Teams y aprobaciones.</li><li>Reportes y alertas que se generan solos.</li></ul></div>
+<div class="card"><h3><span class="ico" aria-hidden="true">🔗</span>Integraciones a medida</h3><p>APIs, WhatsApp y cobros conectados a tu operación.</p></div>
+<div class="card"><h3><span class="ico" aria-hidden="true">🏢</span>BPM empresarial</h3><p>Implementación y soporte de <strong>Appian</strong> y <strong>OnBase</strong>.</p></div>
 </div>
 <h3 class="sub">Antes → Después</h3>
 <div class="grid">
@@ -529,11 +600,11 @@ Más de 10 años liderando TI en Pacífico EPS y Grupo BRECA · Máster en Intel
 
 <h3 class="sub">Industrias que optimizamos</h3>
 <div class="grid">
-<div class="card"><h3>🎓 Educación</h3><ul><li>Automatización de admisiones, matrículas y pagos.</li><li>Optimización de horarios y reportes académicos.</li></ul></div>
-<div class="card"><h3>🏥 Salud</h3><ul><li>Admisión y facturación más rápidas.</li><li>Menos errores administrativos.</li></ul></div>
-<div class="card"><h3>💼 Servicios</h3><ul><li>Facturación y reportes automáticos.</li><li>Control de rentabilidad.</li></ul></div>
-<div class="card"><h3>🏭 Comercio / Manufactura</h3><ul><li>Inventarios optimizados.</li><li>Reducción de mermas.</li></ul></div>
-<div class="card"><h3>🏛 Sector Público</h3><ul><li>Trámites digitales.</li><li>Reducción de tiempos de atención.</li></ul></div>
+<div class="card"><h3><span class="ico" aria-hidden="true">🎓</span>Educación</h3><ul><li>Automatización de admisiones, matrículas y pagos.</li><li>Optimización de horarios y reportes académicos.</li></ul></div>
+<div class="card"><h3><span class="ico" aria-hidden="true">🏥</span>Salud</h3><ul><li>Admisión y facturación más rápidas.</li><li>Menos errores administrativos.</li></ul></div>
+<div class="card"><h3><span class="ico" aria-hidden="true">💼</span>Servicios</h3><ul><li>Facturación y reportes automáticos.</li><li>Control de rentabilidad.</li></ul></div>
+<div class="card"><h3><span class="ico" aria-hidden="true">🏭</span>Comercio / Manufactura</h3><ul><li>Inventarios optimizados.</li><li>Reducción de mermas.</li></ul></div>
+<div class="card"><h3><span class="ico" aria-hidden="true">🏛</span>Sector Público</h3><ul><li>Trámites digitales.</li><li>Reducción de tiempos de atención.</li></ul></div>
 </div>
 
 <div class="cta" style="text-align:center;"><a href="#contacto">Solicitar diagnóstico gratuito</a></div>
@@ -545,22 +616,22 @@ Más de 10 años liderando TI en Pacífico EPS y Grupo BRECA · Máster en Intel
 <p class="lead">Sesiones online prácticas (Zoom / Google Meet), dictadas por Luis Álvarez, Máster en IA y líder de TI con más de 10 años de experiencia. También en versión in-company para tu equipo.</p>
 <div class="grid">
 <div class="card"><span class="badge">Próximamente</span>
-<h3>⚙️ Power Automate y Copilot</h3>
+<h3><span class="ico" aria-hidden="true">⚙️</span>Power Automate y Copilot</h3>
 <p>Automatiza tareas repetitivas de tu día a día: Excel, Outlook, Teams y aprobaciones, sin programar.</p>
 <div class="outcome"><strong>Al final podrás:</strong> construir un flujo que automatice un reporte o una aprobación de tu trabajo.</div>
 <div class="cta"><a href="https://forms.gle/fkG6rGJYyRoypvyz8" target="_blank" rel="noopener" class="sm">Unirme a la lista de espera</a></div></div>
 <div class="card"><span class="badge" style="background:#dcfce7;color:#166534">📅 Sábado 12 de diciembre · 10:00 a. m. (hora de Perú) · Sin costo</span>
-<h3>🏢 IA para tu pyme</h3>
+<h3><span class="ico" aria-hidden="true">🏢</span>IA para tu pyme</h3>
 <p>Aplica IA en ventas, inventario y atención por WhatsApp con casos reales y herramientas que puedes usar desde el primer día.</p>
 <div class="outcome"><strong>Al final podrás:</strong> priorizar 3 usos de IA para tu negocio y saber por dónde empezar.</div>
-<div class="cta"><a href="https://forms.gle/fkG6rGJYyRoypvyz8" target="_blank" rel="noopener" class="sm">Reservar mi lugar</a></div></div>
+<div class="cta"><a href="https://forms.gle/fkG6rGJYyRoypvyz8" target="_blank" rel="noopener" class="sm go">Reservar mi lugar</a></div></div>
 <div class="card"><span class="badge">Próximamente</span>
-<h3>📱 Crea tu app con IA, sin programar</h3>
+<h3><span class="ico" aria-hidden="true">📱</span>Crea tu app con IA, sin programar</h3>
 <p>Convierte tu idea en una app o sistema usando Claude y ChatGPT. Así se construyeron Frondix y Masta Ice.</p>
 <div class="outcome"><strong>Al final podrás:</strong> tener un prototipo de tu idea creado con herramientas de IA.</div>
 <div class="cta"><a href="https://forms.gle/fkG6rGJYyRoypvyz8" target="_blank" rel="noopener" class="sm">Unirme a la lista de espera</a></div></div>
 <div class="card"><span class="badge">Próximamente</span>
-<h3>📋 Gestión de proyectos con IA</h3>
+<h3><span class="ico" aria-hidden="true">📋</span>Gestión de proyectos con IA</h3>
 <p>Planifica, da seguimiento y reporta proyectos más rápido con IA, bajo enfoque PMI y ágil.</p>
 <div class="outcome"><strong>Al final podrás:</strong> generar con IA tu plan, matriz de riesgos e informe de avance.</div>
 <div class="cta"><a href="https://forms.gle/fkG6rGJYyRoypvyz8" target="_blank" rel="noopener" class="sm">Unirme a la lista de espera</a></div></div>
@@ -574,14 +645,14 @@ Más de 10 años liderando TI en Pacífico EPS y Grupo BRECA · Máster en Intel
 <p class="lead">La prueba de que no solo hablamos de automatización: lo construimos de punta a punta, y en los talleres te enseño cómo hacerlo tú.</p>
 <div class="grid">
 <div class="card" style="text-align:center;">
-<h3>📊 Frondix</h3>
+<h3><span class="ico" aria-hidden="true">📊</span>Frondix</h3>
 <p>Sube un Excel desordenado de clientes y en minutos tienes una base de datos con tabla, formulario, cobro recurrente (Culqi) y recordatorios automáticos por WhatsApp.</p>
 <div class="cta">
 <a href="frondix.html">Ver caso Frondix</a>
 </div>
 </div>
 <div class="card" style="text-align:center;">
-<h3>🎙️ Masta Ice</h3>
+<h3><span class="ico" aria-hidden="true">🎙️</span>Masta Ice</h3>
 <p>App Android para grabar, mezclar y masterizar rap desde el celular, sin estudio ni software de escritorio.</p>
 <div class="cta">
 <a href="masta-ice.html">Ver caso Masta Ice</a>
@@ -595,7 +666,7 @@ Más de 10 años liderando TI en Pacífico EPS y Grupo BRECA · Máster en Intel
 <h2>Resultados comprobados</h2>
 <div class="grid">
 <div class="card">
-<h3>📊 Impacto observado en proyectos</h3>
+<h3><span class="ico" aria-hidden="true">📊</span>Impacto observado en proyectos</h3>
 <ul>
 <li>-30% costos operativos</li>
 <li>-40% tiempos de proceso</li>
@@ -604,7 +675,7 @@ Más de 10 años liderando TI en Pacífico EPS y Grupo BRECA · Máster en Intel
 </ul>
 </div>
 <div class="card">
-<h3>🏢 Casos reales</h3>
+<h3><span class="ico" aria-hidden="true">🏢</span>Casos reales</h3>
 <ul>
 <li>Servicios: -40% tiempo de facturación</li>
 <li>Educación: -30% carga operativa</li>
@@ -612,7 +683,7 @@ Más de 10 años liderando TI en Pacífico EPS y Grupo BRECA · Máster en Intel
 </ul>
 </div>
 <div class="card">
-<h3>🚀 Frondix en producción</h3>
+<h3><span class="ico" aria-hidden="true">🚀</span>Frondix en producción</h3>
 <ul>
 <li>20.000 filas por tabla, carga en ~12-16s</li>
 <li>Búsqueda en pantalla: ~76 ms</li>
@@ -627,7 +698,7 @@ Más de 10 años liderando TI en Pacífico EPS y Grupo BRECA · Máster en Intel
 <h2>Sobre mí</h2>
 <div class="about">
 <div class="profile-image">
-<img src="https://i.ibb.co/1fVqdZwp/Chat-GPT-Image-10-ene-2026-19-16-47.png" alt="Luis Alonso Álvarez Rivera">
+<img src="https://i.ibb.co/1fVqdZwp/Chat-GPT-Image-10-ene-2026-19-16-47.png" alt="Luis Alonso Álvarez Rivera" width="640" height="427" loading="lazy">
 </div>
 <div>
 <p>
@@ -682,6 +753,8 @@ Ver perfil en LinkedIn
 </div>
 </section>
 
+</main>
+
 <footer style="text-align: center; padding: 25px 20px; color: #9ca3af; font-size: 0.85rem; line-height: 1.4;">
 
 <p style="margin: 0 0 3px 0;">© 2026 AR Process. Todos los derechos reservados.</p>
@@ -704,6 +777,7 @@ AR Process es una marca comercial operada por <strong style="color: #6b7280;">LU
 
 
 
+<script src="video.js" defer></script>
 </body>
 
 </html> 
