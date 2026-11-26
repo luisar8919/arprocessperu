@@ -5,7 +5,7 @@ document.querySelectorAll('.video-facade').forEach(function (b) {
     f.title = 'AR Process: presentación';
     f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
     f.allowFullscreen = true;
-    f.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:0';
+    f.className = 'nsframe';
     b.replaceWith(f);
   });
 });
