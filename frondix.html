@@ -5,150 +5,54 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Frondix | AR Process</title>
 <meta name="description" content="Frondix: de un Excel desordenado a un sistema de clientes con cobro recurrente (Culqi) y recordatorios automáticos por WhatsApp. Caso de software propio de AR Process.">
-<style>
-body{
-    margin:0;
-    font-family:'Segoe UI',Tahoma,sans-serif;
-    background:#f8fafc;
-    color:#1f2937;
-}
-section{
-    max-width:1200px;
-    margin:auto;
-    padding:90px 20px;
-}
-h1,h2,h3{letter-spacing:-0.5px}
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://www.arprocessperu.com/frondix.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_PE">
+<meta property="og:site_name" content="AR Process">
+<meta property="og:title" content="Frondix | AR Process">
+<meta property="og:description" content="Frondix: de un Excel desordenado a un sistema de clientes con cobro recurrente (Culqi) y recordatorios automáticos por WhatsApp. Caso de software propio de AR Process.">
+<meta property="og:url" content="https://www.arprocessperu.com/frondix.html">
+<meta property="og:image" content="https://www.arprocessperu.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1e40af">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="producto.css">
 
-nav{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    background:white;
-    box-shadow:0 6px 20px rgba(0,0,0,.08);
-}
-.nav-container{
-    max-width:1200px;
-    margin:auto;
-    padding:16px 20px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-.nav-logo img{height:48px;}
-.nav-links a{
-    margin-left:22px;
-    text-decoration:none;
-    font-weight:600;
-    color:#374151;
-}
-.nav-links a:hover{color:#1e40af}
-
-header{
-    background:linear-gradient(135deg,#0f172a,#1e40af);
-    color:white;
-    padding:80px 20px;
-}
-.header-flex{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:50px;
-    max-width:900px;
-    margin:auto;
-    flex-wrap:wrap;
-}
-.header-icon{
-    width:180px;
-    height:180px;
-    border-radius:40px;
-    box-shadow:0 25px 40px rgba(0,0,0,.35);
-    flex-shrink:0;
-    background:rgba(255,255,255,.12);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:5.5rem;
-}
-.header-text{text-align:left;max-width:480px;}
-header h1{font-size:2.6rem;margin:0 0 12px;}
-header p{font-size:1.2rem;opacity:.9;line-height:1.7;margin:0;}
-
-@media(max-width:700px){
-    .header-flex{flex-direction:column;text-align:center;}
-    .header-text{text-align:center;max-width:100%;}
-}
-
-h2{
-    text-align:center;
-    margin-bottom:60px;
-    font-size:2.1rem;
-    color:#1e40af;
-}
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:30px;
-}
-.card{
-    background:white;
-    padding:36px;
-    border-radius:22px;
-    box-shadow:0 15px 30px rgba(0,0,0,.08);
-}
-.card h3{color:#1e40af}
-.card ul{padding-left:18px;line-height:1.7;}
-blockquote{
-    max-width:700px;
-    margin:40px auto 0;
-    padding-left:18px;
-    border-left:4px solid #1e40af;
-    font-style:italic;
-    font-size:1.1rem;
-}
-.alt{background:#f1f5f9}
-
-.contact{
-    background:#0f172a;
-    color:white;
-    padding:70px 30px;
-    border-radius:28px;
-    text-align:center;
-}
-.contact a{
-    display:inline-block;
-    margin:12px;
-    padding:16px 36px;
-    border-radius:16px;
-    font-weight:800;
-    text-decoration:none;
-}
-.whatsapp{background:#22c55e;color:#022c22}
-.email{background:#1e40af;color:white}
-.back-link{color:#9ca3af;text-decoration:none;font-size:.95rem;}
-.back-link:hover{color:white;}
-
-footer{
-    text-align:center;
-    padding:30px;
-    color:#6b7280;
-    font-size:.85rem;
-}
-</style>
 </head>
 <body>
 
-<nav>
+<a class="skip" href="#main">Saltar al contenido</a>
+<nav aria-label="Principal">
 <div class="nav-container">
 <div class="nav-logo">
-    <img src="logo.png" alt="AR Process">
+<a href="index.html"><img src="logo.png" alt="AR Process" width="640" height="178"></a>
 </div>
 <div class="nav-links">
-<a href="index.html">Inicio</a>
-<a href="index.html#apps">Proyectos</a>
+<a href="index.html#ia">IA en negocios</a>
+<a href="index.html#automatizacion">Automatización</a>
+<a href="index.html#talleres">Talleres</a>
+<a href="index.html#apps">Productos</a>
+<a href="index.html#conocenos">Sobre mí</a>
 <a href="index.html#contacto">Contacto</a>
+<a href="https://forms.gle/fkG6rGJYyRoypvyz8" target="_blank" rel="noopener" class="nav-cta">Lista de espera</a>
 </div>
+<details class="mobile-menu">
+<summary aria-label="Abrir menú">☰ Menú</summary>
+<div class="mm-links">
+<a href="index.html#ia">IA en negocios</a>
+<a href="index.html#automatizacion">Automatización</a>
+<a href="index.html#talleres">Talleres</a>
+<a href="index.html#apps">Productos</a>
+<a href="index.html#conocenos">Sobre mí</a>
+<a href="index.html#contacto">Contacto</a>
+<a href="https://forms.gle/fkG6rGJYyRoypvyz8" target="_blank" rel="noopener">Lista de espera</a>
+</div>
+</details>
 </div>
 </nav>
+
+<main id="main">
 
 <!-- ATENCIÓN: miedo/preocupación + dato duro + curiosidad -->
 <header>
@@ -157,7 +61,7 @@ footer{
 <div class="header-text">
 <h1>Frondix</h1>
 <p>¿Cuánto te cuesta seguir administrando clientes en un Excel que solo tú entiendes? Frondix lo convierte en un sistema real en minutos, no en meses.</p>
-<a href="https://www.frondix.com/" target="_blank" rel="noopener" style="display:inline-block;margin-top:22px;background:#22c55e;color:#022c22;padding:14px 32px;border-radius:14px;font-weight:800;text-decoration:none;">Entrar a Frondix →</a>
+<a href="https://www.frondix.com/" target="_blank" rel="noopener" class="btn-go">Entrar a Frondix →</a>
 </div>
 </div>
 </header>
@@ -233,23 +137,39 @@ footer{
 
 <section class="alt">
 <div class="contact">
-<h2 style="color:white;">¿Quieres un sistema así para tu negocio?</h2>
+<h2>¿Quieres un sistema así para tu negocio?</h2>
 <p>Construimos software a medida —desde un Excel desordenado hasta un sistema en producción— igual que hicimos con Frondix.</p>
 <a class="whatsapp" href="https://www.frondix.com/" target="_blank" rel="noopener">🌐 Probar Frondix</a>
 <a class="whatsapp" href="https://wa.me/51998235775">📲 WhatsApp</a>
 <a class="email" href="mailto:lalvarezr@arprocessperu.com">✉ Correo</a>
-<div style="margin-top:20px;">
+<div class="mt20">
 <a class="back-link" href="index.html">← Volver a AR Process</a>
 </div>
 </div>
 </section>
 
+</main>
+
 <footer>
-  <p style="margin: 0 0 3px 0;">© 2026 AR Process. Todos los derechos reservados.</p>
-  <p style="margin: 0;">
-    AR Process es una marca comercial operada por <strong style="color: #6b7280;">LUIS ALONSO ALVAREZ RIVERA E.I.R.L.</strong> | RUC: 20616027376
-  </p>
+
+<p>© 2026 AR Process. Todos los derechos reservados.</p>
+
+<p>
+
+AR Process es una marca comercial operada por <strong>LUIS ALONSO ALVAREZ RIVERA E.I.R.L.</strong> | RUC: 20616027376
+
+</p>
+
+<p>
+
+<a href="/politica-de-privacidad">Política de Privacidad</a> |
+
+<a href="/terminos-y-condiciones">Términos de Servicio</a>
+
+</p>
+
 </footer>
 
+<script src="video.js" defer></script>
 </body>
 </html>

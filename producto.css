@@ -1,0 +1,17 @@
+/* Estilos propios de las paginas de producto (frondix, masta-ice) */
+header{padding:80px 20px}
+.header-flex{display:flex;align-items:center;justify-content:center;gap:50px;max-width:900px;margin:auto;flex-wrap:wrap}
+.header-icon,header img{width:180px;height:180px;border-radius:40px;box-shadow:0 25px 40px rgba(0,0,0,.35);flex-shrink:0}
+.header-icon{background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;font-size:5.5rem}
+.header-text{text-align:left;max-width:480px}
+header h1{font-size:2.6rem;margin:0 0 12px}
+header p{font-size:1.2rem;opacity:.9;line-height:1.7;margin:0}
+.back-link{color:#4b5563;text-decoration:none;font-size:.95rem}
+.back-link:hover{color:#1e40af}
+.contact .back-link{color:#cbd5e1}
+.contact .back-link:hover{color:#fff}
+.contact h2{color:#fff}
+.mt20{margin-top:20px}
+.btn-go{display:inline-block;margin-top:22px;background:#22c55e;color:#022c22;padding:14px 32px;border-radius:14px;font-weight:800;text-decoration:none}
+@media(max-width:900px){header{padding:70px 20px}}
+@media(max-width:700px){.header-flex{flex-direction:column;text-align:center}.header-text{text-align:center;max-width:100%}}
