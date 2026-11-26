@@ -31,462 +31,12 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#1e40af">
-<style>
-
-body{
-
-margin:0;
-
-font-family:'Segoe UI',Tahoma,sans-serif;
-
-background:#f8fafc;
-
-color:#1f2937;
-
-}
-
-section{
-
-max-width:1200px;
-
-margin:auto;
-
-padding:90px 20px;
-
-}
-
-h1,h2,h3{letter-spacing:-0.5px}
-
-
-
-/* NAV */
-
-nav{
-
-position:sticky;
-
-top:0;
-
-z-index:1000;
-
-background:white;
-
-box-shadow:0 6px 20px rgba(0,0,0,.08);
-
-}
-
-.nav-container{
-
-max-width:1200px;
-
-margin:auto;
-
-padding:16px 20px;
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-}
-
-.nav-logo img{height:48px;}
-
-.nav-links a{
-
-margin-left:22px;
-
-text-decoration:none;
-
-font-weight:600;
-
-color:#374151;
-
-}
-
-.nav-links a:hover{color:#1e40af}
-
-
-
-/* HERO */
-
-header{
-
-background:linear-gradient(135deg,#0f172a,#1e40af);
-
-color:white;
-
-padding:130px 20px;
-
-}
-
-.hero{
-
-max-width:1200px;
-
-margin:auto;
-
-display:grid;
-
-grid-template-columns:1.2fr .8fr;
-
-gap:50px;
-
-align-items:center;
-
-}
-
-.hero h1{font-size:3rem}
-
-.hero p{font-size:1.2rem;line-height:1.8}
-
-.hero img{
-
-width:100%;
-
-max-width:420px;
-
-border-radius:22px;
-
-box-shadow:0 25px 40px rgba(0,0,0,.25);
-
-}
-
-.cta a{
-
-display:inline-block;
-
-background:#22c55e;
-
-color:#022c22;
-
-padding:20px 40px;
-
-border-radius:16px;
-
-font-weight:800;
-
-text-decoration:none;
-
-margin-top:30px;
-
-}
-
-.social-proof{
-
-margin-top:18px;
-
-font-size:.95rem;
-
-opacity:.9;
-
-}
-
-
-
-/* TITLES */
-
-h2{
-
-text-align:center;
-
-margin-bottom:60px;
-
-font-size:2.3rem;
-
-color:#1e40af;
-
-}
-
-
-
-/* ABOUT */
-
-.about{
-
-display:grid;
-
-grid-template-columns:1fr 1fr;
-
-gap:45px;
-
-align-items:center;
-
-}
-
-.profile-image{
-
-display:flex;
-
-justify-content:center;
-
-}
-
-.profile-image img{
-
-max-width:380px;
-
-width:100%;
-
-border-radius:22px;
-
-background:white;
-
-padding:6px;
-
-box-shadow:0 20px 35px rgba(0,0,0,.15);
-
-}
-
-blockquote{
-
-margin:20px 0;
-
-padding-left:18px;
-
-border-left:4px solid #1e40af;
-
-font-style:italic;
-
-}
-
-
-
-/* GRID */
-
-.grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-gap:30px;
-
-}
-
-.card{
-
-background:white;
-
-padding:36px;
-
-border-radius:22px;
-
-box-shadow:0 15px 30px rgba(0,0,0,.08);
-
-}
-
-.card h3{color:#1e40af}
-
-.card ul{padding-left:18px;line-height:1.7;}
-
-
-
-.alt{background:#f1f5f9}
-
-
-
-/* FAQ */
-
-details{
-
-background:white;
-
-padding:28px;
-
-border-radius:20px;
-
-margin-bottom:20px;
-
-box-shadow:0 8px 20px rgba(0,0,0,.08);
-
-}
-
-summary{
-
-font-weight:700;
-
-cursor:pointer;
-
-}
-
-
-
-/* CONTACT */
-
-.contact{
-
-background:#0f172a;
-
-color:white;
-
-padding:90px 30px;
-
-border-radius:28px;
-
-text-align:center;
-
-}
-
-.contact a{
-
-display:inline-block;
-
-margin:18px;
-
-padding:18px 40px;
-
-border-radius:16px;
-
-font-weight:800;
-
-text-decoration:none;
-
-}
-
-.whatsapp{background:#22c55e;color:#022c22}
-
-.email{background:#1e40af;color:white}
-
-
-
-form{
-
-max-width:420px;
-
-margin:30px auto 0;
-
-}
-
-input,textarea{
-
-width:100%;
-
-padding:14px;
-
-margin-bottom:14px;
-
-border-radius:10px;
-
-border:none;
-
-}
-
-
-
-footer{
-
-text-align:center;
-
-padding:30px;
-
-color:#6b7280;
-
-}
-
-
-
-@media(max-width:900px){
-
-.hero,.about{grid-template-columns:1fr;text-align:center}
-
-.nav-links{display:none}
-
-}
-
-
-/* REDISENO */
-.hero h1{font-size:2.5rem;line-height:1.2}
-.nav-links{display:flex;align-items:center}
-.nav-links a.nav-cta{background:#22c55e;color:#022c22;padding:10px 18px;border-radius:12px;font-weight:800}
-.cta a.ghost{background:transparent;color:#1e40af;border:2px solid #1e40af;margin-left:12px}
-header .cta a.ghost{color:white;border-color:white}
-.cta a.sm{padding:14px 28px;margin-top:10px}
-.video{position:relative;aspect-ratio:16/9;border-radius:22px;overflow:hidden;box-shadow:0 25px 40px rgba(0,0,0,.25);background:#000}
-.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.lead{text-align:center;max-width:760px;margin:-30px auto 50px;color:#4b5563}
-.bridge{text-align:center;max-width:760px;margin:40px auto 0;font-size:1.1rem}
-.badge{background:#fef3c7;color:#92400e;padding:4px 12px;border-radius:99px;font-size:.8rem;font-weight:700}
-.outcome{background:#eff6ff;border-radius:12px;padding:12px 14px;font-size:.95rem;margin:12px 0}
-.sub{text-align:center;color:#1e40af;margin:50px 0 24px}
-.stats{padding-top:50px;padding-bottom:50px}
-.ba{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center;text-align:center}
-.ba p{margin:0}.ba .arrow{font-size:1.8rem;color:#1e40af}.ba small{grid-column:1/-1;color:#6b7280}
-@media(max-width:900px){.nav-links a:not(.nav-cta){display:none}.nav-links{display:flex}.hero h1{font-size:2rem}.cta a.ghost{margin-left:0}}
-.pillar{display:block;text-decoration:none;color:inherit;transition:transform .15s}.pillar:hover{transform:translateY(-4px)}.pillar strong{color:#1e40af}
-
-/* MEJORAS FRONTEND */
-.nav-links a{white-space:nowrap}
-@media(max-width:1100px){.nav-links a{margin-left:12px;font-size:.92rem}.nav-links a.nav-cta{padding:10px 12px}}
-.nav-logo img{width:auto;max-width:100%}
-.profile-image img{height:auto}
-body{font-family:system-ui,'Segoe UI',Roboto,Tahoma,sans-serif}
-a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid #f59e0b;outline-offset:3px;border-radius:6px}
-.skip{position:absolute;left:-999px;top:0;background:#1e40af;color:#fff;padding:12px 18px;z-index:2000;border-radius:0 0 10px 0}
-.skip:focus{left:0}
-footer,footer p,footer a{color:#4b5563!important;font-size:.9rem!important}
-.nav-links a{padding:12px 4px}
-.badge{font-size:.875rem}
-.ba small{font-size:.875rem}
-.card p a,.bridge a,.about a,.faq a{display:inline-block;padding:10px 0}
-.ico{display:inline-flex;align-items:center;justify-content:center;width:1.9em;height:1.9em;border-radius:50%;background:#eff6ff;margin-right:8px;font-size:.85em}
-.stat{font-size:2rem;font-weight:700;color:#1e40af;margin:0 0 6px}
-.stats .card p{margin:0}
-.nav-links a.nav-cta{background:#1e40af;color:#fff;padding:10px 18px}
-.cta a.sm{background:#1e40af;color:#fff}
-.cta a.sm.go{background:#22c55e;color:#022c22}
-.hero p.sub-h{margin-top:18px}
-details.mobile-menu{display:none;position:relative;padding:0;margin:0;background:none;box-shadow:none;border-radius:0}
-.mobile-menu summary{list-style:none;cursor:pointer;font-weight:700;color:#1e40af;padding:12px 16px;border:2px solid #1e40af;border-radius:12px;min-height:20px}
-.mobile-menu summary::-webkit-details-marker{display:none}
-.mm-links{position:absolute;right:0;top:56px;background:#fff;box-shadow:0 12px 30px rgba(0,0,0,.18);border-radius:14px;padding:8px;min-width:230px;display:flex;flex-direction:column}
-.mm-links a{padding:14px 16px;color:#1f2937;text-decoration:none;font-weight:600;border-radius:10px}
-.mm-links a:hover{background:#eff6ff}
-.video-facade{position:absolute;inset:0;width:100%;height:100%;border:0;padding:0;cursor:pointer;background:#000}
-.video-facade img{width:100%;height:100%;object-fit:cover;opacity:.85}
-.video-facade span{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:76px;height:76px;border-radius:50%;background:#22c55e;color:#022c22;font-size:2rem;display:flex;align-items:center;justify-content:center;padding-left:6px}
-@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.pillar:hover{transform:none}}
-@media(max-width:900px){
-section{padding:56px 20px}
-header{padding:70px 20px}
-.nav-links{display:none!important}
-details.mobile-menu{display:block}
-.nav-container{padding:12px 20px}
-.hero h1{font-size:2rem}
-h2{font-size:1.9rem;margin-bottom:40px}
-.lead{margin:-20px auto 36px}
-}
-
-.opp{display:flex;flex-direction:column;gap:12px}
-.opp h3{margin:0}
-.tag{align-self:flex-start;background:#fef3c7;color:#92400e;padding:4px 12px;border-radius:99px;font-size:.875rem;font-weight:700}
-.tag.real{background:#dcfce7;color:#166534}
-.ba2{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center;background:#eff6ff;border-radius:14px;padding:14px}
-.ba2 small{font-size:.75rem;letter-spacing:.08em;color:#6b7280;font-weight:700}
-.ba2 p{margin:4px 0 0;font-size:.95rem}
-.ba2 .arrow{font-size:1.6rem;color:#1e40af}
-.opp .how{margin:0;color:#4b5563;font-size:.95rem}
-.carousel.is-js .carousel-track{scroll-snap-type:none}
-.carousel.small .carousel-track>.card{flex-basis:calc((100% - 60px)/4);padding:22px}
-@media(max-width:1100px){.carousel.small .carousel-track>.card{flex-basis:calc((100% - 20px)/2)}}
-@media(max-width:700px){.carousel.small .carousel-track>.card{flex-basis:70%}}
-/* CARRUSEL */
-.carousel{position:relative}
-.carousel-track{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:10px 4px 26px}
-.carousel-track::-webkit-scrollbar{display:none}
-.carousel-track>.card{flex:0 0 calc((100% - 40px)/3);scroll-snap-align:start;padding:26px;box-sizing:border-box}
-.carousel-track>.card:last-child{scroll-snap-align:end}
-.car-btn{display:none;position:absolute;top:50%;transform:translateY(-60%);z-index:2;width:48px;height:48px;border-radius:50%;border:0;background:#fff;color:#1e40af;font-size:2rem;line-height:1;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.25)}
-.carousel.is-js .car-btn{display:flex;align-items:center;justify-content:center}
-.car-btn.prev{left:-14px}.car-btn.next{right:-14px}
-.car-btn:disabled{opacity:.35;cursor:default}
-.car-btn:hover:not(:disabled){background:#1e40af;color:#fff}
-@media(max-width:1100px){.carousel-track>.card{flex-basis:calc((100% - 20px)/2)}}
-@media(max-width:700px){.carousel-track>.card{flex-basis:85%}.car-btn.prev{left:-8px}.car-btn.next{right:-8px}}
-footer a{display:inline-block;padding:12px 6px}
-.ba small,.ba2 small{font-size:.8125rem}
-</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Organization","@id":"https://www.arprocessperu.com/#org","name":"AR Process","url":"https://www.arprocessperu.com/","logo":"https://www.arprocessperu.com/logo.png","email":"lalvarezr@arprocessperu.com","telephone":"+51998235775","founder":{"@type":"Person","name":"Luis Alonso Álvarez Rivera"},"sameAs":["https://www.linkedin.com/in/luis-alonso-alvarez-rivera-b9b53193/"]},
+{"@type":"Event","name":"Taller en vivo: IA para tu pyme","startDate":"2026-12-12T10:00:00-05:00","endDate":"2026-12-12T12:00:00-05:00","eventStatus":"https://schema.org/EventScheduled","eventAttendanceMode":"https://schema.org/OnlineEventAttendanceMode","location":{"@type":"VirtualLocation","url":"https://www.arprocessperu.com/#talleres"},"description":"Taller práctico y gratuito sobre cómo aplicar IA en una pyme.","image":"https://www.arprocessperu.com/og-image.png","inLanguage":"es-PE","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"PEN","url":"https://forms.gle/fkG6rGJYyRoypvyz8","availability":"https://schema.org/InStock"},"organizer":{"@id":"https://www.arprocessperu.com/#org"}}]}
+</script>
+<link rel="stylesheet" href="styles.css">
 
 </head>
 
@@ -542,7 +92,7 @@ Más de 10 años liderando TI en Pacífico EPS y Grupo BRECA · Máster en Intel
 </div>
 <div class="video">
 <button class="video-facade" data-yt="DBdC5Y5vNuo" aria-label="Reproducir video de presentación"><img src="https://i.ytimg.com/vi/DBdC5Y5vNuo/hqdefault.jpg" alt="" width="480" height="360"><span aria-hidden="true">▶</span></button>
-<noscript><iframe src="https://www.youtube-nocookie.com/embed/DBdC5Y5vNuo" title="AR Process: presentación" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe></noscript>
+<noscript><iframe src="https://www.youtube-nocookie.com/embed/DBdC5Y5vNuo" title="AR Process: presentación" allowfullscreen class="nsframe"></iframe></noscript>
 </div>
 </div>
 </header>
@@ -554,19 +104,19 @@ Más de 10 años liderando TI en Pacífico EPS y Grupo BRECA · Máster en Intel
 <div class="carousel small" data-carousel>
 <button type="button" class="car-btn prev" aria-label="Anterior">‹</button>
 <div class="carousel-track" tabindex="0" role="region" aria-label="Cifras clave">
-<div class="card" style="text-align:center;">
+<div class="card tc">
 <p class="stat">10+</p>
 <p>años liderando TI en empresas grandes (seguros, holding BRECA)</p>
 </div>
-<div class="card" style="text-align:center;">
+<div class="card tc">
 <p class="stat">-80%</p>
 <p>tiempo de respuesta en procesos críticos de negocio (con IA y automatización)</p>
 </div>
-<div class="card" style="text-align:center;">
+<div class="card tc">
 <p class="stat">+30h</p>
 <p>hombre al mes ahorradas automatizando con Power Automate</p>
 </div>
-<div class="card" style="text-align:center;">
+<div class="card tc">
 <p class="stat">99.9%</p>
 <p>disponibilidad en plataformas Cloud bajo su gestión</p>
 </div>
@@ -600,7 +150,7 @@ Más de 10 años liderando TI en Pacífico EPS y Grupo BRECA · Máster en Intel
 <button type="button" class="car-btn next" aria-label="Siguiente">›</button>
 </div>
 <p class="bridge"><strong>Ejemplo real:</strong> en Frondix, la IA (Gemini) lee el Excel del cliente y sugiere cómo organizar sus datos, reduciendo la configuración manual al dar de alta un negocio.</p>
-<div class="cta" style="text-align:center;"><a href="#contacto">Diagnóstico gratuito de IA</a><a href="#talleres" class="ghost">Aprender en un taller</a></div>
+<div class="cta tc"><a href="#contacto">Diagnóstico gratuito de IA</a><a href="#talleres" class="ghost">Aprender en un taller</a></div>
 </section>
 
 <!-- 5. AUTOMATIZACION DE PROCESOS -->
@@ -645,7 +195,7 @@ Más de 10 años liderando TI en Pacífico EPS y Grupo BRECA · Máster en Intel
 <button type="button" class="car-btn next" aria-label="Siguiente">›</button>
 </div>
 
-<div class="cta" style="text-align:center;"><a href="#contacto">Solicitar diagnóstico gratuito</a></div>
+<div class="cta tc"><a href="#contacto">Solicitar diagnóstico gratuito</a></div>
 </section>
 
 <!-- 6. TALLERES: AIDA / 4P (promesa, imagen, prueba, empuje) -->
@@ -660,7 +210,7 @@ Más de 10 años liderando TI en Pacífico EPS y Grupo BRECA · Máster en Intel
 <p>Automatiza tareas repetitivas de tu día a día: Excel, Outlook, Teams y aprobaciones, sin programar.</p>
 <div class="outcome"><strong>Al final podrás:</strong> construir un flujo que automatice un reporte o una aprobación de tu trabajo.</div>
 <div class="cta"><a href="https://forms.gle/fkG6rGJYyRoypvyz8" target="_blank" rel="noopener" class="sm">Unirme a la lista de espera</a></div></div>
-<div class="card"><span class="badge" style="background:#dcfce7;color:#166534">📅 Sábado 12 de diciembre · 10:00 a. m. (hora de Perú) · Sin costo</span>
+<div class="card"><span class="badge free">📅 Sábado 12 de diciembre · 10:00 a. m. (hora de Perú) · Sin costo</span>
 <h3><span class="ico" aria-hidden="true">🏢</span>IA para tu pyme</h3>
 <p>Aplica IA en ventas, inventario y atención por WhatsApp con casos reales y herramientas que puedes usar desde el primer día.</p>
 <div class="outcome"><strong>Al final podrás:</strong> priorizar 3 usos de IA para tu negocio y saber por dónde empezar.</div>
@@ -686,14 +236,14 @@ Más de 10 años liderando TI en Pacífico EPS y Grupo BRECA · Máster en Intel
 <h2>Productos que construí con IA</h2>
 <p class="lead">La prueba de que no solo hablamos de automatización: lo construimos de punta a punta, y en los talleres te enseño cómo hacerlo tú.</p>
 <div class="grid">
-<div class="card" style="text-align:center;">
+<div class="card tc">
 <h3><span class="ico" aria-hidden="true">📊</span>Frondix</h3>
 <p>Sube un Excel desordenado de clientes y en minutos tienes una base de datos con tabla, formulario, cobro recurrente (Culqi) y recordatorios automáticos por WhatsApp.</p>
 <div class="cta">
 <a href="frondix.html">Ver caso Frondix</a>
 </div>
 </div>
-<div class="card" style="text-align:center;">
+<div class="card tc">
 <h3><span class="ico" aria-hidden="true">🎙️</span>Masta Ice</h3>
 <p>App Android para grabar, mezclar y masterizar rap desde el celular, sin estudio ni software de escritorio.</p>
 <div class="cta">
@@ -740,7 +290,7 @@ Más de 10 años liderando TI en Pacífico EPS y Grupo BRECA · Máster en Intel
 <h2>Sobre mí</h2>
 <div class="about">
 <div class="profile-image">
-<img src="https://i.ibb.co/1fVqdZwp/Chat-GPT-Image-10-ene-2026-19-16-47.png" alt="Luis Alonso Álvarez Rivera" width="640" height="427" loading="lazy">
+<img src="luis.webp" alt="Luis Alonso Álvarez Rivera" width="640" height="427" loading="lazy">
 </div>
 <div>
 <p>
@@ -768,7 +318,7 @@ Ver perfil en LinkedIn
 <!-- 9. PREGUNTAS FRECUENTES: objeciones -->
 <section id="faq">
 <h2>Preguntas frecuentes</h2>
-<div style="max-width:800px;margin:0 auto">
+<div class="wrap800">
 <h3 class="sub">Sobre los talleres</h3>
 <details><summary>¿Cómo se dictan los talleres?</summary><p>Son online y en vivo, por Zoom o Google Meet. Recibirás el enlace por correo al inscribirte.</p></details>
 <details><summary>¿Necesito saber programar?</summary><p>No. Los talleres están pensados para profesionales y emprendedores sin experiencia técnica; todo se explica paso a paso y con ejemplos reales.</p></details>
@@ -789,7 +339,7 @@ Ver perfil en LinkedIn
 <div class="contact">
 <h2>Elige tu camino</h2>
 <p>Aprende en un taller, o cuéntanos tu proceso y vemos cómo aplicar IA y automatización. Respondemos en menos de 24 horas.</p>
-<a href="https://forms.gle/fkG6rGJYyRoypvyz8" target="_blank" rel="noopener" style="background:#22c55e;color:#022c22">📝 Lista de espera de talleres</a>
+<a href="https://forms.gle/fkG6rGJYyRoypvyz8" target="_blank" rel="noopener" class="go">📝 Lista de espera de talleres</a>
 <a class="whatsapp" href="https://wa.me/51998235775?text=Hola%2C%20quiero%20un%20diagn%C3%B3stico%20gratuito%20de%20procesos">📲 Diagnóstico por WhatsApp</a>
 <a class="email" href="mailto:lalvarezr@arprocessperu.com">✉ Correo</a>
 </div>
@@ -797,21 +347,21 @@ Ver perfil en LinkedIn
 
 </main>
 
-<footer style="text-align: center; padding: 25px 20px; color: #9ca3af; font-size: 0.85rem; line-height: 1.4;">
+<footer>
 
-<p style="margin: 0 0 3px 0;">© 2026 AR Process. Todos los derechos reservados.</p>
+<p>© 2026 AR Process. Todos los derechos reservados.</p>
 
-<p style="margin: 0 0 3px 0;">
+<p>
 
-AR Process es una marca comercial operada por <strong style="color: #6b7280;">LUIS ALONSO ALVAREZ RIVERA E.I.R.L.</strong> | RUC: 20616027376
+AR Process es una marca comercial operada por <strong>LUIS ALONSO ALVAREZ RIVERA E.I.R.L.</strong> | RUC: 20616027376
 
 </p>
 
-<p style="margin: 0;">
+<p>
 
-<a href="/politica-de-privacidad" style="color: #9ca3af; text-decoration: underline;">Política de Privacidad</a> |
+<a href="/politica-de-privacidad">Política de Privacidad</a> |
 
-<a href="/terminos-y-condiciones" style="color: #9ca3af; text-decoration: underline;">Términos de Servicio</a>
+<a href="/terminos-y-condiciones">Términos de Servicio</a>
 
 </p>
 
